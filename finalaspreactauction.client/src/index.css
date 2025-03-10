@@ -18,21 +18,9 @@ a {
     text-decoration: inherit;
 }
 
-    a:hover {
-        /*font-weight: 700*/
-    }
-
 body {
     margin: 0;
     display: flex;
-    /*place-items: center;*/
-    min-width: 320px;
-    min-height: 100vh;
-}
-
-h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
 }
 
 li {
@@ -60,35 +48,17 @@ button {
         outline: 4px auto -webkit-focus-ring-color;
     }
 
-    #title{
-    }
 
 .make {
     display: grid;
-    padding-left: 0;
     grid-template-columns: 1fr 2fr 2fr 1fr;
+    gap: 10px;
     color: #FFFFFF;
-    margin: 0 100px;
 }
 
 
 .btnMake:hover {
     color: cornflowerblue
-}
-
-@media (max-width: 1100px) {
-    .make {
-        grid-template-columns: repeat(2, 1fr);
-        margin: 0 auto
-    }
-}
-
-
-
-@media (max-width: 1025px) {
-    .make {
-        display: block;
-    }
 }
 
 

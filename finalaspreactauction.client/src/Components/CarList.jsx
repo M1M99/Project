@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import styled from "styled-components";
 
 const CarList = () => {
+    const Container = styled.div`
+        margin:0 10px;
+        padding:0 10px;
+        border-radius:3px;
+        background-color:#8ecae6;
+    `
+    
     const [cars, setCars] = useState([]);
     const url1 = "https://localhost:7038/api/Car/Cars";
 
@@ -19,8 +27,9 @@ const CarList = () => {
             });
     }, []);
 
+
     return (
-        <div>
+        <Container>
             {cars.length === 0 ? (
                 <strong>Loading...</strong>
             ) : (
@@ -34,7 +43,7 @@ const CarList = () => {
                     </li>
                 ))
             )}
-        </div>
+        </Container>
     );
 };
 

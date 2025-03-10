@@ -29,7 +29,7 @@ builder.Services.AddCors(p => p.AddPolicy("cors", builder =>
     .AllowAnyMethod()
     .AllowAnyHeader();
 }));
-builder.Services.AddScoped<BrandCollection>();
+builder.Services.AddScoped<BrandController>();
 var app = builder.Build();
 app.UseDefaultFiles();
 app.UseStaticFiles();

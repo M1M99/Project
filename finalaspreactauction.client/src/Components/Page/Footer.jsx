@@ -4,27 +4,29 @@ import { useState } from "react";
 function Footer() {
     const [make, setMake] = useState([]);
     function GetMakes() {
-            fetch("https://localhost:7038/api/BrandCollection/GetAll").then(res => res.json()).then((data) => {
-                var data1 = Object.values(data);
-                setMake(data1);
-            })
+        fetch("https://localhost:7038/api/Brand/GetAll").then(res => res.json()).then((data) => {
+            var data1 = Object.values(data);
+            setMake(data1);
+        })
     }
 
     useEffect(() => {
         GetMakes();
-    },[])
+    }, [])
 
     return (
-        <ul className="make" >
-            {make.map((brand) => (
-                <div>
-                    <li key={brand.id} className="make">
-                        <a className="btnMake" href={`https://localhost:7038/api/Car/GetByBrandName?id=${brand.id}`}>{brand.name}</a>
-                    </li>
-                </div>
-            ))
-            }
-        </ul>
+        <div style={{}}>
+                <ul className="make" >
+                    {make.map((brand) => (
+                        <div>
+                            <li key={brand.id} className="make">
+                                <a className="btnMake" href={`https://localhost:7038/api/Car/GetByBrandName?id=${brand.id}`}>{brand.name}</a>
+                            </li>
+                        </div>
+                    ))
+                    }
+                </ul>
+        </div>
     )
 }
 
