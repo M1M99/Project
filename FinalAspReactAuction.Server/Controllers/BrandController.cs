@@ -1,8 +1,8 @@
-﻿using FinalAspReactAuction.Server.Data;
+﻿using FinalAspReactAuction.Server.Dtos.CarDto;
+using FinalAspReactAuction.Server.Dtos.MakeDto;
 using FinalAspReactAuction.Server.Entities;
-using Microsoft.AspNetCore.Http;
+using FinalAspReactAuction.Server.Services.Abstract;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace FinalAspReactAuction.Server.Controllers
 {
@@ -10,33 +10,24 @@ namespace FinalAspReactAuction.Server.Controllers
     [ApiController]
     public class BrandController : ControllerBase
     {
-        private readonly ApplicationDbContext? _dbContext;
+        private readonly IMakeService? _service;
 
-        public BrandController(ApplicationDbContext? dbContext)
+        public BrandController(IMakeService? service)
         {
-            _dbContext = dbContext;
+            _service = service;
         }
+
         [HttpGet("GetAll")]
-        public async Task<ICollection<Make>> GetAllAsync()
+        public async Task<IEnumerable<Make>> GetAllAsync()
         {
-            return await _dbContext.Makes.ToListAsync();
-        }
-        [HttpGet("GetByName")]
-        public async Task<Make> GetByName(string name)
-        {
-            return await _dbContext.Makes.FirstOrDefaultAsync(a => a.Name == name);
+            var result = await _service.GetAll();
+            return result;
         }
 
-
-        [HttpGet]
-        public async Task<ActionResult> Get(int id)
+        [HttpGet("GetById")]
+        public async Task<Make> Get(int id)
         {
-            var brand = await _dbContext.Makes.FirstOrDefaultAsync(a => a.Id == id);
-            if (brand is { })
-            {
-                return Ok(brand);
-            }
-            return NotFound();
+            return await _service.GetById(id);
         }
 
         [HttpDelete("DeleteBrand")]
@@ -44,14 +35,30 @@ namespace FinalAspReactAuction.Server.Controllers
         {
             try
             {
-                var t = _dbContext.Makes.Remove(await _dbContext.Makes.FirstOrDefaultAsync(a => a.Id == id));
-                await _dbContext.SaveChangesAsync();
+                await _service.DeleteById(id);
                 return NoContent();
             }
-            catch(Exception ex)
+            catch
             {
-                return StatusCode(505, "Can not delete Because This Make Using");
+                return StatusCode(505);
             }
+        }
+
+        [HttpPost("AddMake")]
+        public async Task<ActionResult<AddMakeDto>> AddMake(Make make) {
+            var brand = new Make
+            {
+                Description = make.Description,
+                Name = make.Name
+            };
+            var brandd = await _service.Add(brand);
+
+            var returnByDto = new AddMakeDto
+            {
+                Name = brand.Name,
+                Description = brand.Description
+            };
+            return Ok(returnByDto);
         }
     }
 }

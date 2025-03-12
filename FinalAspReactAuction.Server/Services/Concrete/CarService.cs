@@ -15,6 +15,13 @@ namespace FinalAspReactAuction.Server.Services.Concrete
         {
             _context = context;
         }
+
+        public async Task<Car> Add(Car entity)
+        {
+            await _context.AddAsync(entity);
+            await _context.SaveChangesAsync();
+            return entity;
+        }
         #region DeleteOnTask
         //public async Task Delete(Car entity)
         //{
@@ -46,7 +53,7 @@ namespace FinalAspReactAuction.Server.Services.Concrete
         }
 
  
-        public async Task<IEnumerable<Car>> GetAllCars()
+        public async Task<IEnumerable<Car>> GetAll()
         {
             return await _context.Cars
                 .Include(c => c.Make)
@@ -68,7 +75,7 @@ namespace FinalAspReactAuction.Server.Services.Concrete
             return query;
         }
 
-        public Task<Car> GetCarByCar(Car entity)
+        public Task<Car> GetByObject(Car entity)
         {
             var carForId = _context.Cars.FirstOrDefaultAsync(car => car.Id == entity.Id);
             if(carForId is not null)

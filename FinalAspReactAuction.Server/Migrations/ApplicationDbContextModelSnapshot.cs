@@ -69,7 +69,7 @@ namespace FinalAspReactAuction.Server.Migrations
                         .HasColumnType("float");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("money");
 
                     b.Property<string>("SaleDocument")
                         .HasColumnType("nvarchar(max)");

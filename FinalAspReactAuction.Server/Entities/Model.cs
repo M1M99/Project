@@ -6,6 +6,6 @@
         public string Name { get; set; }
         public string Type { get; set; }
         public Make Make { get; set; }
-        public ICollection<Car> Cars { get; set; }
+        public ICollection<Car>? Cars { get; set; }
     }
 }

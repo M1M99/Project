@@ -10,7 +10,7 @@ public class Car
     public string Vin { get; set; }
     public string Damage { get; set; }
     public double Otometer { get; set; }
-    [JsonIgnore]
+    //[JsonIgnore]
     public string Engine { get; set; }
     public string? FuelType { get; set; }
     public string Branch { get; set; }  

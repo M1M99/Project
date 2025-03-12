@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FinalAspReactAuction.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2463ec93292b54c7fe6acf86ed51a781e80026f7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0238449611217b4bbed34fb8428329f339ca36fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("FinalAspReactAuction.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FinalAspReactAuction.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

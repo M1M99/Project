@@ -16,10 +16,11 @@ namespace FinalAspReactAuction.Server.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Car>()
-                .HasOne(a => a.Model).WithMany(a => a.Cars)
+            //modelBuilder.Entity<Car>().Property(p => p.Price).HasColumnType("money");
+                modelBuilder.Entity<Car>().HasOne(a => a.Model).WithMany(a => a.Cars)
                 //.OnDelete(DeleteBehavior.Cascade);
                 .OnDelete(DeleteBehavior.Restrict);
+
         }
 
     }
