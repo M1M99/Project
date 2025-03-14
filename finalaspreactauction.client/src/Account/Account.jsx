@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import styles from '../Account/account.module.css'; // CSS modülünü import ediyoruz
+import styles from '../Account/account.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import axios from '../../../node_modules/axios/index';
 import { useNavigate } from 'react-router-dom';
 function Account() {
     const [isActive, setIsActive] = useState(false);
+    const [css, changeCSS] = useState(false);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -13,13 +14,22 @@ function Account() {
     const [error, setError] = useState("");
     let navigate = useNavigate();
 
+    useEffect(() => {
+        // `document.body` manipülasyonunu React'ta doðrudan yapmýyoruz, bunun yerine component state'ini kullanarak stilleri kontrol edebiliriz.
+        if (!css) {
+            document.body.classList.add(styles.bodyBackground);
+        } else {
+            document.body.classList.remove(styles.bodyBackground); // Stil sýnýfýný kaldýrabilirsiniz
+        }
+    }, [css]);
+
     const handleRegisterClick = () => {
         setIsActive(true);
     };
 
     const handleLoginClick = () => {
         setIsActive(false);
-    };
+    };  
 
     async function handleSubmitSignIn(e) {
         e.preventDefault();
@@ -37,6 +47,7 @@ function Account() {
                 if (response.data.token) {
                     localStorage.setItem("authToken", response.data.token)
                 }
+                changeCSS(true)
                 navigate("/#");
             }
             if (response.status === 401) {
