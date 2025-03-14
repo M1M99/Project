@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useState } from "react";
-
 function Footer() {
     const [make, setMake] = useState([]);
     function GetMakes() {
@@ -22,7 +21,6 @@ function Footer() {
                 {make.map((brand) => (
                     <li key={brand.id} className="make">
                         <a className="btnMake" href={`https://localhost:7038/api/Car/GetByBrandName?id=${brand.id}`}>{brand.name}</a>
-                        {/*<h4 onClick={`https://localhost:7038/api/Car/GetByBrandName?id=${brand.id}`}>{brand.name}</h4>*/}
                     </li>
                 ))
                 }
