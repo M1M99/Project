@@ -1,7 +1,7 @@
-﻿using FinalAspReactAuction.Server.Dtos.CarDto;
+﻿using Auction.Business.Abstract;
 using FinalAspReactAuction.Server.Dtos.MakeDto;
 using FinalAspReactAuction.Server.Entities;
-using FinalAspReactAuction.Server.Services.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FinalAspReactAuction.Server.Controllers
@@ -10,7 +10,7 @@ namespace FinalAspReactAuction.Server.Controllers
     [ApiController]
     public class BrandController : ControllerBase
     {
-        private readonly IMakeService? _service;
+        private readonly IMakeService _service;
 
         public BrandController(IMakeService? service)
         {
@@ -20,14 +20,14 @@ namespace FinalAspReactAuction.Server.Controllers
         [HttpGet("GetAll")]
         public async Task<IEnumerable<Make>> GetAllAsync()
         {
-            var result = await _service.GetAll();
+            var result = await _service.GetAllAsync();
             return result;
         }
 
         [HttpGet("GetById")]
         public async Task<Make> Get(int id)
         {
-            return await _service.GetById(id);
+            return await _service.GetByIdAsync(id);
         }
 
         [HttpDelete("DeleteBrand")]
@@ -35,7 +35,7 @@ namespace FinalAspReactAuction.Server.Controllers
         {
             try
             {
-                await _service.DeleteById(id);
+                await _service.DeleteAsync(id);
                 return NoContent();
             }
             catch
@@ -45,20 +45,54 @@ namespace FinalAspReactAuction.Server.Controllers
         }
 
         [HttpPost("AddMake")]
-        public async Task<ActionResult<AddMakeDto>> AddMake(Make make) {
+        //[Authorize(Roles = "Admin")]
+        public async Task<ActionResult<AddMakeDto>> AddMake(Make make)
+        {
+            var existingBrand = await _service.GetAllAsync();
+            var result = existingBrand.FirstOrDefault(a => a.Name.ToLower() == make.Name.ToLower());
+
+            if (result != null)
+            {
+                return Conflict(new { message = "Already Exist" });
+            }
+
             var brand = new Make
             {
                 Description = make.Description,
                 Name = make.Name
             };
-            var brandd = await _service.Add(brand);
+
+            await _service.AddAsync(brand);
 
             var returnByDto = new AddMakeDto
             {
                 Name = brand.Name,
                 Description = brand.Description
             };
+
             return Ok(returnByDto);
+        }
+
+
+        [HttpPut("EditMake")]
+        public async Task<ActionResult> EditMake(EditMakeDto dto)
+        {
+            try
+            {
+                var customer = new Make
+                {
+                    Id = dto.Id,
+                    Name = dto.Name,
+                    Description = dto.Description,
+                };
+                await _service.UpdateAsync(customer);
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Server Error: {ex.Message}");
+            }
         }
     }
 }

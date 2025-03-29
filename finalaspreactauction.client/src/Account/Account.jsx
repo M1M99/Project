@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import axios from '../../../node_modules/axios/index';
 import { useNavigate } from 'react-router-dom';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 function Account() {
     const [isActive, setIsActive] = useState(false);
     const [css, changeCSS] = useState(false);
@@ -15,11 +16,10 @@ function Account() {
     let navigate = useNavigate();
 
     useEffect(() => {
-        // `document.body` manipülasyonunu React'ta doðrudan yapmýyoruz, bunun yerine component state'ini kullanarak stilleri kontrol edebiliriz.
         if (!css) {
             document.body.classList.add(styles.bodyBackground);
         } else {
-            document.body.classList.remove(styles.bodyBackground); // Stil sýnýfýný kaldýrabilirsiniz
+            document.body.classList.remove(styles.bodyBackground);
         }
     }, [css]);
 
@@ -29,7 +29,12 @@ function Account() {
 
     const handleLoginClick = () => {
         setIsActive(false);
-    };  
+    };
+
+    const handleHomeClick = () => {
+        changeCSS(true)
+        navigate("/");
+    };
 
     async function handleSubmitSignIn(e) {
         e.preventDefault();
@@ -43,15 +48,15 @@ function Account() {
         try {
             if (response.status === 200) {
                 console.log("Ok", response.data);
-                console.log(document.body);
                 if (response.data.token) {
                     localStorage.setItem("authToken", response.data.token)
                 }
                 changeCSS(true)
                 navigate("/#");
             }
-            if (response.status === 401) {
-                return (<div><p>Cix Bayra</p></div>)
+            else if (response.status === 401) {
+                console.log(response.status, "error")
+                return (response.status)
             }
             else {
                 console.log("error");
@@ -73,11 +78,12 @@ function Account() {
         const response = await axios.post("https://localhost:7038/api/Account/Register", {
             email: email,
             password: password,
-            name:name,
+            name: name,
         })
         try {
             if (response.status === 200) {
                 console.log("ok", response.data);
+                changeCSS(true)
                 navigate("/#")
             }
             else {
@@ -93,15 +99,6 @@ function Account() {
         }
     }
 
-    //document.body.style.minWidth = "800px";
-    //document.body.style.backgroundColor = "#c9d6ff";
-    //document.body.style.background = "linear-gradient(to right, #e2e2e2, #c9d6ff)"
-    //document.body.style.display = "flex";
-    //document.body.style.alignItems = "center";
-    //document.body.style.justifyContent = "center";
-    //document.body.style.flexDirection = "column";
-    //document.body.style.height = "100vh";
-
     return (
         <div className={`${styles.container} ${isActive ? styles.active : ''}`}>
             {isActive ? (
@@ -113,6 +110,7 @@ function Account() {
                             <a href="#" className={styles.icon}><FontAwesomeIcon icon={faFacebook} /></a>
                             <a href="#" className={styles.icon}><FontAwesomeIcon icon={faGithub} /></a>
                             <a href="#" className={styles.icon}><FontAwesomeIcon icon={faLinkedin} /></a>
+                            <a href="#" className={styles.icon} onClick={handleHomeClick} className={styles.icon}><FontAwesomeIcon icon={faHouse} /></a>
                         </div>
                         <span>or use your email for registration</span>
                         <input type="text" placeholder="Name" value={name} onChange={(n) => setName(n.target.value)} />
@@ -130,6 +128,7 @@ function Account() {
                             <a href="#" className={styles.icon}><FontAwesomeIcon icon={faFacebook} /></a>
                             <a href="#" className={styles.icon}><FontAwesomeIcon icon={faGithub} /></a>
                             <a href="#" className={styles.icon}><FontAwesomeIcon icon={faLinkedin} /></a>
+                            <a href="#" className={styles.icon} onClick={handleHomeClick} className={styles.icon}><FontAwesomeIcon icon={faHouse} /></a>
                         </div>
                         <span>or use your email password</span>
                         <input type="text" placeholder="Name" value={name} onChange={(n) => setName(n.target.value)} />

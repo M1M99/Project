@@ -1,9 +1,10 @@
-using FinalAspReactAuction.Server.Controllers;
+using Auction.Business.Abstract;
+using Auction.Business.Concrete;
+using Auction.DataAccess.Abstract;
+using Auction.DataAccess.Concrete.EntityFramework;
+using CloudinaryDotNet;
 using FinalAspReactAuction.Server.Data;
 using FinalAspReactAuction.Server.Entities;
-using FinalAspReactAuction.Server.Repository;
-using FinalAspReactAuction.Server.Services.Abstract;
-using FinalAspReactAuction.Server.Services.Concrete;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
@@ -15,7 +16,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var conn = builder.Configuration.GetConnectionString("DefaultConnection");
-
+builder.WebHost.ConfigureKestrel(options => options.Limits.MaxRequestBodySize = 50 * 1024 * 1024);
 builder.Services.AddDbContext<ApplicationDbContext>(opt =>
 {
     opt.UseSqlServer(conn);
@@ -31,10 +32,15 @@ builder.Services.AddIdentity<CustomIdentityUser, CustomIdentityRole>()
     .AddDefaultTokenProviders();
 
 builder.Services.AddControllers().AddJsonOptions(x =>
-    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles); 
+    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
+builder.Services.AddScoped<ICloudinaryService, CloudinaryService>();
+builder.Services.AddScoped<ICarDal, EfCarDal>();
+builder.Services.AddScoped<IMakeDal, EfMakeDal>();
+builder.Services.AddScoped<IModelDal, EfModelDal>();
 builder.Services.AddScoped<ICarService, CarService>();
-builder.Services.AddScoped<IMakeService, MakeService>();
 builder.Services.AddScoped<IModelService, ModelService>();
+builder.Services.AddScoped<IMakeService, MakeService>();
 
 builder.Services.AddCors(p => p.AddPolicy("cors", builder =>
 {

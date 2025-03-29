@@ -11,7 +11,6 @@ createRoot(document.getElementById('root')).render(
             <Routes>
                 <Route path="/" element={<App />} key={location.key} />
                 <Route path="/login" element={<Account />} key={location.key} />
-            {/*<App />*/}
         </Routes>
         </BrowserRouter>
     </StrictMode>

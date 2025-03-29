@@ -5,8 +5,8 @@ namespace FinalAspReactAuction.Server.Dtos.CarDto
 {
     public class AddCarDto
     {
-        public Make Make { get; set; }
-        public Model Model { get; set; }
+        public int MakeId { get; set; }
+        public int ModelId { get; set; }
         public int Year { get; set; }
         public string Vin { get; set; }
         public string Damage { get; set; }
@@ -21,5 +21,8 @@ namespace FinalAspReactAuction.Server.Dtos.CarDto
         public string? SaleDocument { get; set; }
         public string? Description { get; set; }
         public decimal Price { get; set; }
+
+        //public string? ImageUrl { get; set; }
+        //public string? VideoUrl { get; set; }
     }
 }

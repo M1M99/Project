@@ -23,17 +23,14 @@ function Footer() {
     }, [])
 
     return (
-        <div style={{ border: "2px solid aqua", margin: "5px", borderRadius:"5px" }}>
-        <h5>Makes :</h5>
-            <ul className="make" >
-                {make.map((brand) => (
-                    <li key={brand.id} className="make">
-                        <a className="btnMake" href={`https://localhost:7038/api/Car/GetByBrandName?id=${brand.id}`}>{brand.name}</a>
-                        {/*<button className="btnMake" onClick={() => GetCarsById(brand.id)}>{brand.name}</button>*/}
-                    </li>
-                ))
-                }
-            </ul>
+        <div className="grid grid-cols-4 gap-4 place-items-center">
+            {make.map((brand) => (
+                <li key={brand.id}>
+                    <a className="btnMake" href={`https://localhost:7038/api/Car/GetByBrandId?id=${brand.id}`}>{brand.name}</a>
+                    {/*<button className="btnMake" onClick={() => GetCarsById(brand.id)}>{brand.name}</button>*/}
+                </li>
+            ))
+            }
         </div>
 
     )

@@ -3,16 +3,18 @@ import logo from "../../assets/auction.png";
 import styled from "styled-components";
 import { useNavigate } from 'react-router-dom';
 import './../../index.css'
-function Header() {
+function Header({ adminName}) {
     const [showLogin, setShowLogin] = useState(false);
     const navigate = useNavigate();
+    const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('authToken'));
+
     const Image = styled.img`
         width: 80px;
         height: 80px;
         border-radius: 50%;
     `;
 
-    const Container = styled.div`
+    const Nav = styled.nav`
         margin: 1px 3px;
         height: 82px;
         background-color: #121825;
@@ -34,15 +36,23 @@ function Header() {
             navigate("/login");
         }
     }, [showLogin, navigate])
+    const handleLogout = () => {
+        localStorage.removeItem('authToken');
+        setIsAuthenticated(false);
 
+        navigate('/login');
+    };
     return (
         <>
             <header>
-                <Container>
+                <Nav>
                     <Image src={logo} alt="Logo" />
                     <Span id="title">Online Car Auction</Span>
-                    <Span style={{ marginLeft: "auto" }} onClick={() => setShowLogin(true)}>Log in</Span>
-                </Container>
+                    {!isAuthenticated ? (
+                        <button className="navBtn" id="login" style={{ marginLeft: "auto" }} onClick={() => setShowLogin(true)}>Log in</button>)
+                        :
+                        (<button className="navBtn" onClick={handleLogout} style={{ marginLeft: "auto" }}>Log out<span style={{ display: "flex", justifyContent: "center", fontSize: "0.5rem" }}>{adminName}</span></button>)
+                    }</Nav>
             </header>
         </>
     );

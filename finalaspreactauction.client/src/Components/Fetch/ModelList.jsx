@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useState } from "react";
-
 function ModelList() {
     const [model, setModel] = useState([])
     function GetModel() {
