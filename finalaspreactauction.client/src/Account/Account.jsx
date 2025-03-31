@@ -37,6 +37,10 @@ function Account() {
         changeCSS(true)
         navigate("/");
     };
+    const handleHomeClick1 = () => {
+        changeCSS(true)
+        navigate("/admin");
+    };
 
     async function handleSubmitSignIn(e) {
         e.preventDefault();
@@ -58,8 +62,9 @@ function Account() {
                 console.log(role1, "salam")
                 console.log(role1.toString())
                 if (role1.toString() === "Admin") {
-                    <Link to="/admin">SS</Link>
-                    //navigate('/admin')
+                    console.log("Navigating to admin page");
+                    changeCSS(true);
+                    return navigate("/admin");
                 }
                 changeCSS(true)
                 navigate("/#");

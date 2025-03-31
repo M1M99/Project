@@ -27,7 +27,7 @@ createRoot(document.getElementById('root')).render(
                 <Route path="/addmakeormodel" element={<AdminSide />} key={location.key} />
                 <Route path="/admin" element={
                     <AdminLayout />
-                } key={location.key} />
+                }/>
                 <Route path={`/getCarByBrand/:id`} element={<GetCarByMake />} key={location.key}></Route>
                 <Route path="*" element={<NotFound />} key={location.key}></Route>
             </Routes>
