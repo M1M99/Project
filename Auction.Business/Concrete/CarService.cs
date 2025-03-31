@@ -43,6 +43,12 @@ namespace Auction.Business.Concrete
             return await _carAccess.GetCollection();
         }
 
+        public async Task<List<Car>> GetAllAsyncForPagination(int page, int count)
+        {
+            var cars = await _carAccess.GetCollection();
+            return cars.Skip((page-1) * count).Take(count).ToList();
+        }
+
         public async Task<List<Car>> GetAllByMakeId(int makeId)
         {
             return await _carAccess.GetCollection(c => c.MakeId == makeId);

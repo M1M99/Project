@@ -3,6 +3,8 @@ import logo from "../../assets/auction.png";
 import styled from "styled-components";
 import { useNavigate } from 'react-router-dom';
 import './../../index.css'
+import { Link } from 'react-router-dom';
+
 function Header({ adminName}) {
     const [showLogin, setShowLogin] = useState(false);
     const navigate = useNavigate();
@@ -47,7 +49,7 @@ function Header({ adminName}) {
             <header>
                 <Nav>
                     <Image src={logo} alt="Logo" />
-                    <Span id="title">Online Car Auction</Span>
+                    <Span id="title"><Link to="/#">Online Car Auction</Link></Span>
                     {!isAuthenticated ? (
                         <button className="navBtn" id="login" style={{ marginLeft: "auto" }} onClick={() => setShowLogin(true)}>Log in</button>)
                         :

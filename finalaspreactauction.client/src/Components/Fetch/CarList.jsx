@@ -17,15 +17,15 @@ const CarList = () => {
     const [search, setSearch] = useState('');
     const [userrole, setUserRole] = useState('');
     const navigate = useNavigate();
-    const [carIdToUpdate, setCarIdToUpdate] = useState(null);  // Güncellenmek üzere seçilen araç ID'si
-    const [selectedCarDetails, setSelectedCarDetails] = useState(null);  // Seçilen aracýn detaylarý
+    const [carIdToUpdate, setCarIdToUpdate] = useState(null); 
+    const [selectedCarDetails, setSelectedCarDetails] = useState(null);  
 
     const [editBtn, setEditBtn] = useState(false);
 
     const update = (carId) => {
-        setCarIdToUpdate(carId); // carId'yi state'e atýyoruz
-        const carToUpdate = cars.find(car => car.id === carId); // Aracýn detaylarýný buluyoruz
-        setSelectedCarDetails(carToUpdate);  // Seçilen aracýn detaylarýný state'e atýyoruz
+        setCarIdToUpdate(carId); 
+        const carToUpdate = cars.find(car => car.id === carId); 
+        setSelectedCarDetails(carToUpdate); 
     }
 
 
@@ -140,7 +140,7 @@ const CarList = () => {
                     filteredCars.map((car) => (
                         <div className="flex" id="listofcar" key={car.id}>
                             <div id="imgCar" className="w-[250px]"><img src={car.imageUrl} alt={car.vin} /></div>
-                            <div className="w-xl flex justify-between">
+                            <div id="detailscars" className="w-xl flex justify-between">
                                 <table className="table-auto m-2">
                                     <thead>
                                         <tr>

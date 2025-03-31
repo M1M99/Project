@@ -5,6 +5,9 @@ import AdminSide from "./Components/Admin/AdminSide"
 import ModelList from "./Components/Fetch/ModelList"
 import Emp from "./Components/Emp"
 import AddCar1 from "./Components/Fetch/AddCar1"
+import AdminLayout from "./Components/Page/AdminLayout"
+import GetCarByMake from "./Components/Fetch/GetCarByMake"
+import Example from "./Components/Example/Example"
 
 function App() {
     return (
@@ -13,9 +16,8 @@ function App() {
             <CarList />
             <ModelList />
             <Footer />
-            <AdminSide />
-            <AddCar1 />
             <Emp />
+            <Example/>
         </div>
     )
 }

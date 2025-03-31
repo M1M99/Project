@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import "tailwindcss";
-
 :root {
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -13,16 +12,19 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 .react-slideshow-container .nav {
     padding: 0px;
     margin: 0;
 }
 
 #adminSideName {
-    animation: admin 4s ease-in-out alternate;
+    font-size:2vw;
+    animation: admin 3s ease-in-out alternate;
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-wrap:wrap;
+    align-content:center;
+    margin : 0 10%;
 }
 
 @keyframes admin {
@@ -30,12 +32,12 @@
         left: 0px;
     }
 
-    50% {
-        left: 100px;
+    25% {
+        left: 10px;
     }
 
     75% {
-        left: 50px;
+        left: 5px;
     }
 
     100% {
@@ -298,25 +300,61 @@ td {
     th{
         padding-left:3vw;
     }
-    td{
-        padding-left:10vw
+    #detailscars{
+        display:flex;
+        justify-content:center;
+        padding:1vw;
+    }
+}
+@media (max-width: 600px) {
+    #imgCar{
+        margin: 0 auto;
+    }
+    #listofcar {
+        display: block;
+    }
+    th{
+        padding-left:3vw;
+    }
+    #detailscars{
+        display:flex;
+        justify-content:space-between;
+
+                animation:change 0.7s alternate-reverse;
+        padding:1vw;
     }
 }
 
 #edit,#delete{
     margin-left:5vw;
 }
-/*@media (min-width: 1024px) {
+
+td{
+    padding-left:8vw;
+    transition:padding-left 0.5s ease;
+}
+th{
+}
+@media (min-width: 860px) {
     td {
-        padding-left: 8vw;
+        padding-left: 10vw;
         margin: 0;
+        animation:change 0.7s alternate-reverse
     }
     #imgCar{
-        margin-right:7vw
+        margin-right:5vw
     }
 }
 
-@media (max-width:900px){
+@keyframes change{
+    0%{
+        padding-left:10vw;
+    }
+    100%{
+        padding-left:1vw;
+    }
+}
+/*@media (max-width:900px){
     #imgCar{
         padding-left:10px;
     }

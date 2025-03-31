@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using System.Collections.Generic;
 
 namespace FinalAspReactAuction.Server.Controllers
 {
@@ -34,7 +35,7 @@ namespace FinalAspReactAuction.Server.Controllers
         public async Task<List<Car>> GetAscending()
         {
             var cars = await _carService.GetAllAsync();
-            return cars.OrderBy(a=>a.Price).ToList();
+            return cars.OrderBy(a => a.Price).ToList();
         }
 
         [HttpGet("GetById")]
@@ -56,8 +57,22 @@ namespace FinalAspReactAuction.Server.Controllers
             return makes;
         }
 
+        [HttpGet("ForPagination")]
+        public async Task<ActionResult> GetCarsPage([FromQuery]int page = 1, [FromQuery]int count = 10)
+        {
+            var cars = await _carService.GetAllAsync();
+            var a = await _carService.GetAllAsyncForPagination(page, count);
+            return Ok(new
+            {
+                TotalCount = cars.Count ,
+                Page = page,
+                Limit = count,
+                Cars = a
+            });
+        }
+
         [HttpPost("AddNewCar")]
-        public async Task<ActionResult<string>> AddNewCar([FromForm]AddCarDto car,IFormFile video, IFormFile photo)
+        public async Task<ActionResult<string>> AddNewCar([FromForm] AddCarDto car, IFormFile video, IFormFile photo)
         {
             string photoUrl = string.Empty;
             string videoUrl = string.Empty;
@@ -131,7 +146,8 @@ namespace FinalAspReactAuction.Server.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<string>> Update([FromForm]UpdateCarDto car,IFormFile video, IFormFile photo) {
+        public async Task<ActionResult<string>> Update([FromForm] UpdateCarDto car, IFormFile video, IFormFile photo)
+        {
 
             string photoUrl = string.Empty;
             string videoUrl = string.Empty;
@@ -165,26 +181,26 @@ namespace FinalAspReactAuction.Server.Controllers
                 Branch = car.Branch,
                 Country = car.Country,
                 Cylinder = car.Cylinder,
-                Damage =car.Damage,
+                Damage = car.Damage,
                 Description = car.Description,
-                Engine=car.Engine,
-                FuelType=car.FuelType,
-                Key = car.Key,  
-                ImageUrl = photoUrl,    
-                MakeId=car.MakeId,
-                ModelId=car.ModelId,
-                Otometer=car.Otometer,
-                Price=car.Price,
-                SaleDocument=car.SaleDocument,
-                VideoUrl = videoUrl  ,
-                Vin=car.Vin,
-                Year=car.Year,
+                Engine = car.Engine,
+                FuelType = car.FuelType,
+                Key = car.Key,
+                ImageUrl = photoUrl,
+                MakeId = car.MakeId,
+                ModelId = car.ModelId,
+                Otometer = car.Otometer,
+                Price = car.Price,
+                SaleDocument = car.SaleDocument,
+                VideoUrl = videoUrl,
+                Vin = car.Vin,
+                Year = car.Year,
             };
 
             await _carService.UpdateAsync(updatecar);
             var updateCarDto = new UpdateCarDto
             {
-                Id=car.Id,
+                Id = car.Id,
                 Branch = updatecar.Branch,
                 Country = updatecar.Country,
                 Cylinder = updatecar.Cylinder,

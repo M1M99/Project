@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Form, Button } from "react-bootstrap";
 import { useEffect } from "react";
+import Fade from "react-bootstrap/esm/Fade";
 
 const AddCar1 = () => {
     const [formData, setFormData] = useState({
@@ -24,7 +25,7 @@ const AddCar1 = () => {
         photo: null,
     });
     const [flag, setFlag] = useState(false);
-    const [makes, setMakes] = useState([]); 
+    const [makes, setMakes] = useState([]);
     const [models, setModels] = useState([]);
 
     const [responseMessage, setResponseMessage] = useState("");
@@ -33,7 +34,7 @@ const AddCar1 = () => {
         const fetchMakes = async () => {
             try {
                 const response = await axios.get("https://localhost:7038/api/Brand/GetAll");
-                setMakes(response.data); 
+                setMakes(response.data);
             } catch (error) {
                 console.error("Error fetching makes:", error);
             }
@@ -113,9 +114,15 @@ const AddCar1 = () => {
     };
 
     return (
-        <div>
-            <h3 style={{ cursor: "pointer" }} onClick={() => setFlag(!flag)}>{!flag ? "Add New Car" : "Cancel"}</h3>
-            {flag && <Form onSubmit={handleSubmit}>
+        <div className="m-1 bg-white">
+            <Button style={{ cursor: "pointer" }}
+                onClick={() => setFlag(!flag)}
+                aria-controls="example-fade-text"
+                aria-expanded={flag}
+            >
+                {!flag ? "Add New Car" : "Cancel"}
+            </Button>
+            <Fade in={flag}><Form onSubmit={handleSubmit}>
                 {makes && (
                     <Form.Group className="mb-3">
                         <Form.Label>Make</Form.Label>
@@ -156,13 +163,13 @@ const AddCar1 = () => {
 
                 {['branch', 'country', 'cylinder', 'damage', 'description', 'engine', 'fuelType', 'key', 'otometer', 'price', 'saleDocument', 'vin', 'year'].map((field) => (
                     <Form.Group className="mb-3" key={field} style={{ padding: "0 5px" }}>
-                        <Form.Label>{field}</Form.Label>
+                        <Form.Label style={{ textTransform: "capitalize" }}>{field}</Form.Label>
                         <Form.Control
                             type="text"
                             name={field}
                             value={formData[field]}
                             onChange={handleInputChange}
-                            placeholder={field}
+                            placeholder={field.charAt(0).toLocaleUpperCase() + field.slice(1)}
                         />
                     </Form.Group>
                 ))}
@@ -191,7 +198,7 @@ const AddCar1 = () => {
                     Add Car
                 </Button>
             </Form>
-            }
+            </Fade>
             {responseMessage && <p>{responseMessage}</p>}
         </div>
     );

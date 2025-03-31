@@ -12,6 +12,7 @@ namespace Auction.Business.Abstract
     public interface ICarService
     {
         Task<List<Car>> GetAllAsync();
+        Task<List<Car>> GetAllAsyncForPagination(int page,int count);
         Task<List<Car>> GetAllByMakeId(int makeId);
         Task<List<Car>> GetAllByModelId(int modelId);
         Task<Car> GetByIdAsync(int id);

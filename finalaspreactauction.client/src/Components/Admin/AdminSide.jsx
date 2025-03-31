@@ -1,12 +1,12 @@
 import { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
-import { Form } from 'react-bootstrap';
+import { Form, Button } from "react-bootstrap";
 import { jwtDecode } from "jwt-decode";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import AddModel from "./AdminSideAddModel";
 import Header from "../Page/Header";
+import Fade from "react-bootstrap/esm/Fade";
+
 
 function AdminSide() {
     const [name, setName] = useState("");
@@ -19,7 +19,6 @@ function AdminSide() {
     const [userRole, setUserRole] = useState('');
     const navigate = useNavigate();
     const [flag, setFlag] = useState(false);
-
 
 
     const handleSubmit = async (event) => {
@@ -49,7 +48,7 @@ function AdminSide() {
                     setResponse(null);
                     setName('')
                     setDescription('')
-                },10000)
+                }, 10000)
             } else {
                 const data = await res.json();
                 setError(data.message);
@@ -94,61 +93,67 @@ function AdminSide() {
 
     return (
         <>
-            {console.log(userRole)}
-            {userRole === "Admin" && (
-                <div>
-                    {/*<Header adminName={Adminname} />*/}
-                    <h2 id="adminSideName">Welcome {Adminname}</h2>
-                    <AddModel/>
-                    <h3 style={{ cursor: "pointer" }} onClick={() => setFlag(!flag)}>{!flag ? "Add New Make" : "Cancel"}</h3>
-                    {flag && <Form onSubmit={handleSubmit} className="forEdit">
-                        <Form.Group className="mb-3" controlId="formBasicName" style={{ padding: "0 5px" }}>
-                            <Form.Label style={{ fontFamily: "sans-serif" }}>Name</Form.Label>
-                            <Form.Control
-                                type="text"
-                                placeholder="Enter Name"
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
-                                required
-                            />
-                        </Form.Group>
-
-                        <Form.Group className="mb-3" controlId="formBasicDescription" style={{ padding: "0 5px" }}>
-                            <Form.Label>Description</Form.Label>
-                            <Form.Control
-                                type="text"
-                                placeholder="Enter Description"
-                                value={description}
-                                onChange={(e) => setDescription(e.target.value)}
-                            />
-                        </Form.Group>
-
-                        <Button
-                            variant="primary"
-                            type="submit"
-                            style={{ display: "block", width: "50%", margin: "0 auto" }}
-                            disabled={loading}
-                        >
-                            {loading ? "Submitting..." : "Submit"}
+            {userRole === "Admin" &&
+                (
+                    <div className="flex">
+                        <h2 id="adminSideName">Welcome {Adminname}</h2>
+                        {/*<AddModel />*/}
+                        <Button  onClick={() => setFlag(!flag)}
+                            aria-controls="example-fade-text"
+                            aria-expanded={flag}>
+                            {!flag ? "Add New Make" : "Cancel"}
                         </Button>
-                    </Form>
-                    }
-                    {response && (
-                        <div>
-                            {console.log(response)}
-                            <h3>Make Added Successfully</h3>
-                            <p>Name: {response.name}</p>
-                            {
-                                response.description !== '' && (<p>Description: {response.description}</p>)}
-                        </div>
-                    )}
 
-                    {error && (
-                        <div style={{ color: "red", marginTop: "10px" }}>
-                            <p>{error}</p>
+                    <Fade in={flag}>
+                        <div><Form onSubmit={handleSubmit} className="forEdit">
+                            <Form.Group className="mb-3" controlId="formBasicName" style={{ padding: "0 5px" }}>
+                                <Form.Label style={{ fontFamily: "sans-serif" }}>Name</Form.Label>
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Enter Name"
+                                    value={name}
+                                    onChange={(e) => setName(e.target.value)}
+                                    required
+                                />
+                            </Form.Group>
+
+                            <Form.Group className="mb-3" controlId="formBasicDescription" style={{ padding: "0 5px" }}>
+                                <Form.Label>Description</Form.Label>
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Enter Description"
+                                    value={description}
+                                    onChange={(e) => setDescription(e.target.value)}
+                                />
+                            </Form.Group>
+
+                            <Button
+                                variant="primary"
+                                type="submit"
+                                style={{ display: "block", width: "50%", margin: "0 auto" }}
+                                disabled={loading}
+                            >
+                                {loading ? "Submitting..." : "Submit"}
+                            </Button>
+                        </Form>
                         </div>
-                    )}
-                </div>)}
+                        </Fade>
+                        {response && (
+                            <div>
+                                {console.log(response)}
+                                <h3>Make Added Successfully</h3>
+                                <p>Name: {response.name}</p>
+                                {
+                                    response.description !== '' && (<p>Description: {response.description}</p>)}
+                            </div>
+                        )}
+
+                        {error && (
+                            <div style={{ color: "red", marginTop: "10px" }}>
+                                <p>{error}</p>
+                            </div>
+                        )}
+                    </div>)}
         </>
     );
 }
