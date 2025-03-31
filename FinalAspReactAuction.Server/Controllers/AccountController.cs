@@ -128,7 +128,8 @@ namespace FinalAspReactAuction.Server.Controllers
             {
                 Token = new JwtSecurityTokenHandler().
                 WriteToken(token),
-                Expiration = token.ValidTo
+                Expiration = token.ValidTo,
+                Role = _userManager.GetRolesAsync(user)
             });
         }
         private JwtSecurityToken GetToken(List<Claim> authClaims)

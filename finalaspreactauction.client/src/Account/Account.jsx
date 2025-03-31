@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import axios from '../../../node_modules/axios/index';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
 function Account() {
     const [isActive, setIsActive] = useState(false);
@@ -13,6 +14,7 @@ function Account() {
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
+    const [role, setRole] = useState("");
     let navigate = useNavigate();
 
     useEffect(() => {
@@ -48,11 +50,20 @@ function Account() {
         try {
             if (response.status === 200) {
                 console.log("Ok", response.data);
+                setRole(response.data.role);
                 if (response.data.token) {
                     localStorage.setItem("authToken", response.data.token)
                 }
+                let role1 = response.data.role.result;
+                console.log(role1, "salam")
+                console.log(role1.toString())
+                if (role1.toString() === "Admin") {
+                    <Link to="/admin">SS</Link>
+                    //navigate('/admin')
+                }
                 changeCSS(true)
                 navigate("/#");
+                console.log(response)
             }
             else if (response.status === 401) {
                 console.log(response.status, "error")

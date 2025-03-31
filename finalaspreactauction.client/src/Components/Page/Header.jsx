@@ -49,7 +49,7 @@ function Header({ adminName}) {
             <header>
                 <Nav>
                     <Image src={logo} alt="Logo" />
-                    <Span id="title"><Link to="/#">Online Car Auction</Link></Span>
+                    <Span><Link id="title" to="/#">Online Car Auction</Link></Span>
                     {!isAuthenticated ? (
                         <button className="navBtn" id="login" style={{ marginLeft: "auto" }} onClick={() => setShowLogin(true)}>Log in</button>)
                         :

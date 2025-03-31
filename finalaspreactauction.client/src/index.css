@@ -16,7 +16,12 @@
     padding: 0px;
     margin: 0;
 }
-
+#title {
+    color: #a9d6e5;
+    text-decoration: none;
+    /*font-size: 22px;*/
+    font-weight: 600;
+}
 #adminSideName {
     font-size:2vw;
     animation: admin 3s ease-in-out alternate;
