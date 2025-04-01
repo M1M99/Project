@@ -35,7 +35,7 @@ function Emp() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img style={{ width: '100%', height: '400px', objectFit: 'cover' }} src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Porsche/911/11757/1717680690776/front-left-side-47.jpg" text="First slide" />
+                <img style={{ width: '100%', height: '400px', objectFit: 'cover' }} src="https://media.ed.edmunds-media.com/audi/rs-6/2025/oem/2025_audi_rs-6_wagon_performance_fq_oem_1_1600.jpg" text="First slide" />
                 <Carousel.Caption>
                     <h3>First slide label</h3>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>

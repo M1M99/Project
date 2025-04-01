@@ -9,6 +9,9 @@ import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import UpdateCarForm from '../Admin/Update';
+import { Tooltip, IconButton } from '@mui/material';
+import DeleteIcon from '@mui/icons-material/Delete';
+import ModeEditIcon from '@mui/icons-material/ModeEdit';
 
 const CarList = () => {
     const [cars, setCars] = useState([]);
@@ -17,15 +20,15 @@ const CarList = () => {
     const [search, setSearch] = useState('');
     const [userrole, setUserRole] = useState('');
     const navigate = useNavigate();
-    const [carIdToUpdate, setCarIdToUpdate] = useState(null); 
-    const [selectedCarDetails, setSelectedCarDetails] = useState(null);  
+    const [carIdToUpdate, setCarIdToUpdate] = useState(null);
+    const [selectedCarDetails, setSelectedCarDetails] = useState(null);
 
     const [editBtn, setEditBtn] = useState(false);
 
     const update = (carId) => {
-        setCarIdToUpdate(carId); 
-        const carToUpdate = cars.find(car => car.id === carId); 
-        setSelectedCarDetails(carToUpdate); 
+        setCarIdToUpdate(carId);
+        const carToUpdate = cars.find(car => car.id === carId);
+        setSelectedCarDetails(carToUpdate);
     }
 
 
@@ -164,15 +167,25 @@ const CarList = () => {
                                             <td>{car.engine}L</td>
                                             {userrole === "Admin" && editBtn && (
                                                 <>
-                                                    <td id="delete" className="absolute right-10">
-                                                        <button onClick={() => handleAction(car.id)} className="btn btn-primary">
-                                                            Delete
-                                                        </button>
-                                                    </td>
                                                     <td id="edit" className="absolute right-40">
-                                                        <button onClick={() => update(car.id)} className="btn btn-primary">
-                                                            Update
-                                                        </button>
+                                                        {/*<button onClick={() => update(car.id)} className="btn btn-primary">*/}
+                                                        {/*    Update*/}
+                                                        {/*</button>*/}
+                                                        <Tooltip title="Edit">
+                                                            <IconButton onClick={() => handleAction(car.id)}>
+                                                                {<ModeEditIcon />}
+                                                            </IconButton>
+                                                        </Tooltip>
+                                                    </td>
+                                                    <td id="delete" className="absolute right-10">
+                                                        {/*<button onClick={() => handleAction(car.id)} className="btn btn-primary">*/}
+                                                        {/*    Delete*/}
+                                                        {/*</button>*/}
+                                                        <Tooltip title="Delete">
+                                                            <IconButton onClick={() => handleAction(car.id)}>
+                                                                <DeleteIcon />
+                                                            </IconButton>
+                                                        </Tooltip>
                                                     </td>
                                                 </>
                                             )}

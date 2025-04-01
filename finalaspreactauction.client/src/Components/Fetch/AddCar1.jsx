@@ -3,6 +3,7 @@ import axios from "axios";
 import { Form, Button } from "react-bootstrap";
 import { useEffect } from "react";
 import Fade from "react-bootstrap/esm/Fade";
+import { Alert} from '@mui/material';
 
 const AddCar1 = () => {
     const [formData, setFormData] = useState({
@@ -89,6 +90,14 @@ const AddCar1 = () => {
             [name]: files[0]
         });
     };
+    useEffect(() => {
+        if (responseMessage) {
+            window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behavior: 'smooth', 
+            });
+        }
+    }, [responseMessage]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -199,7 +208,11 @@ const AddCar1 = () => {
                 </Button>
             </Form>
             </Fade>
-            {responseMessage && <p>{responseMessage}</p>}
+            {responseMessage &&
+                <Alert className="my-3" variant="filled" severity="success">
+                    {responseMessage}
+                </Alert>
+            }
         </div>
     );
 };

@@ -8,6 +8,8 @@ import AddCar1 from "./Components/Fetch/AddCar1"
 import AdminLayout from "./Components/Page/AdminLayout"
 import GetCarByMake from "./Components/Fetch/GetCarByMake"
 import Example from "./Components/Example/Example"
+import App1 from "./Components/Example/DarkMode"
+
 
 function App() {
     return (
@@ -17,7 +19,8 @@ function App() {
             <ModelList />
             <Footer />
             <Emp />
-            <Example/>
+            <Example />
+            <App1/>
         </div>
     )
 }

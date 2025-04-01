@@ -8,7 +8,7 @@ import ResponsiveAutoExample from '../Example/ResponsiveAutoExample';
 function AdminLayout() {
     return (
         <div>
-        <Navbar expand="lg" style={{ backgroundColor: "#E1E5F2" }}>
+            <Navbar expand="lg" style={{ backgroundColor: "#536878" }}>
             <Container>
                 <Navbar.Brand href="#home">Admin-Auction</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
