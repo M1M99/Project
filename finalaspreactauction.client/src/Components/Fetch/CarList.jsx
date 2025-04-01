@@ -121,7 +121,7 @@ const CarList = () => {
 
     return (
         <Container id="container">
-            {console.log(cars)}
+            {/*{console.log(cars)}*/}
             <div className='inputDiv'>
                 {userrole === "Admin" && (<FontAwesomeIcon icon={faPenToSquare} className="editForAdminIcon" onClick={() => { editHandle() }} />)}
                 <FontAwesomeIcon style={{ display: "flex", width: "30px", height: "30px", margin: "auto 3px" }} className="iconSearch" icon={faSearchengin} />
@@ -166,14 +166,14 @@ const CarList = () => {
                                             <td>{car.vin}</td>
                                             <td>{car.engine}L</td>
                                             {userrole === "Admin" && editBtn && (
-                                                <>
-                                                    <td id="edit" className="absolute right-40">
+                                                <div>
+                                                    <td id="edit" className="absolute right-50">
                                                         {/*<button onClick={() => update(car.id)} className="btn btn-primary">*/}
                                                         {/*    Update*/}
                                                         {/*</button>*/}
                                                         <Tooltip title="Edit">
-                                                            <IconButton onClick={() => handleAction(car.id)}>
-                                                                {<ModeEditIcon />}
+                                                            <IconButton onClick={() => update(car.id)}>
+                                                                <ModeEditIcon />
                                                             </IconButton>
                                                         </Tooltip>
                                                     </td>
@@ -187,7 +187,7 @@ const CarList = () => {
                                                             </IconButton>
                                                         </Tooltip>
                                                     </td>
-                                                </>
+                                                </div>
                                             )}
                                         </tr>
                                     </tbody>

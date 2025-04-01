@@ -274,14 +274,25 @@ td {
 
 @media (max-width: 1150px) {
     #delete {
-        position: static;
+        position:static;
         display: inline-block;
+        /*right:35px;*/
     }
+}
+
+#edit{
+    margin:0;
+    padding:0;
+}
+#delete{
+    margin:0;
+    padding:0;
 }
 
 @media (max-width: 1150px) {
     #edit {
-        position: static;
+        position:static;
+        /*right:10px;*/
         display: inline-block;
     }
 }
@@ -329,7 +340,6 @@ td {
     #detailscars{
         display:flex;
         justify-content:space-between;
-
                 animation:change 0.7s alternate-reverse;
         padding:1vw;
     }

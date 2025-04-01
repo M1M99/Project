@@ -1,17 +1,17 @@
-﻿//import { ThemeProvider, createTheme } from '@mui/material/styles';
-//import CssBaseline from '@mui/material/CssBaseline';
+﻿import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
-//const darkTheme = createTheme({
-//    palette: {
-//        mode:"dark"
-//    },
-//});
+const darkTheme = createTheme({
+    palette: {
+        mode:"dark"
+    },
+});
 
-//export default function App1() {
-//  return (
-//    <ThemeProvider theme={darkTheme}>
-//      <CssBaseline />
-//      <main>This app is using the dark mode</main>
-//    </ThemeProvider>
-//  );
-//}
+export default function App1() {
+  return (
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <main>This app is using the dark mode</main>
+    </ThemeProvider>
+  );
+}
