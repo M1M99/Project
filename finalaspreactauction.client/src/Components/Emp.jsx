@@ -19,7 +19,7 @@ function Emp() {
         <Carousel interval={200}>
             <Carousel.Item>
                 <a href="/#">
-                    <img style={{ width: '100%', height: '400px', objectFit: 'cover' }} // Set height and style
+                    <img style={{ width: '100%', height: '400px', objectFit: 'cover' }}
                         src="https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXkBuNYdMGF4tl3U0%25z8rMHIspMBvMZq6G5OtgSv31nBJaA4qh4NSEGewirQ91wRmWBi2Ow7gVdc0BtUlhDfzEPspAnPdjEiZJyNydlctBvoZ9nf8dXFWr6a%25JsewTRmWBi1%25k7gVdcF5XUlhDfu7dspAnPeAEiZkm69PTvmCT8ZVHE5AKfyUxtMlJ49pNmH" text="First slide" />
                 </a>
                 <Carousel.Caption>

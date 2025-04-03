@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";  // useParams'ý import ettik
-import axios from "axios";  // Axios'u import ettik
+import { useParams } from "react-router-dom";  
+import axios from "axios";  
 import Header from "./../Page/Header"
 const GetCarByMake = () => {
-    const { id } = useParams();  // URL'deki 'id' parametresini alýyoruz
+    const { id } = useParams();  
     const [cars, setCars] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);

@@ -12,8 +12,8 @@ export default function Example() {
         try {
             const response = await axios.get(`https://localhost:7038/api/Car/ForPagination?page=${currentPage}&count=${carsPerPage}`);
             console.log(response)
-            setCars(response.data.cars); // add .result
-            setTotalCars(response.data.totalCount); // Update total number of cars
+            setCars(response.data.cars);
+            setTotalCars(response.data.totalCount); 
         } catch (error) {
             console.error("Error fetching cars:", error);
         }
@@ -21,7 +21,7 @@ export default function Example() {
 
     useEffect(() => {
         fetchCars();
-    }, [currentPage]); // Fetch cars every time currentPage changes
+    }, [currentPage]);
 
     const handleNextPage = () => {
         if (currentPage * carsPerPage < totalCars) {
