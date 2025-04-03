@@ -16,7 +16,7 @@ function AddModel() {
             .then((res) => { setMakes(res.data) })
     }, [])
 
-    const AddModel = async (event) => {
+    const handleModel = async (event) => {
         event.preventDefault();
 
         const model = {
@@ -38,7 +38,7 @@ function AddModel() {
     return (
         <div>
             <h3 onClick={() => setFlag(!flag)} style={{ cursor: "pointer" }}>{!flag ? "Add New Model" : "Cancel"}</h3>
-            {flag && <Form onSubmit={AddModel} className="forEdit">
+            {flag && <Form onSubmit={handleModel} className="forEdit">
                 <Form.Group className="mb-3" controlId="formBasicMake" style={{ padding: "0 5px" }}>
                     <Form.Label style={{ fontFamily: "sans-serif" }}>Make</Form.Label>
                     <Form.Control

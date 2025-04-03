@@ -24,7 +24,6 @@ function UpdateCarForm({ carId, carDetails, makes, models }) {
     });
 
     useEffect(() => {
-        // Eðer carDetails deðiþirse, formu güncelle
         if (carDetails && carDetails.id === carId) {
             setCar({
                 id: carId,
@@ -47,7 +46,7 @@ function UpdateCarForm({ carId, carDetails, makes, models }) {
                 video: null,
             });
         }
-    }, [carDetails, carId]); // carDetails veya carId deðiþirse yeniden çalýþacak
+    }, [carDetails, carId]); 
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -191,7 +190,6 @@ function UpdateCarForm({ carId, carDetails, makes, models }) {
                     placeholder="Year"
                 />
 
-                {/* MakeId ve ModelId Seçenekleri */}
                 <div>
                     <label htmlFor="MakeId">Select Make:</label>
                     <select name="MakeId" value={car.MakeId} onChange={handleChange}>

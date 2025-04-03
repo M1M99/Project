@@ -3,9 +3,9 @@ import { Form, Button } from "react-bootstrap";
 import { jwtDecode } from "jwt-decode";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import AddModel from "./AdminSideAddModel";
 import Header from "../Page/Header";
 import Fade from "react-bootstrap/esm/Fade";
+import AddModel from "./AddModel";
 
 
 function AdminSide() {

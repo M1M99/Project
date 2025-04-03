@@ -9,6 +9,7 @@ import AdminLayout from "./Components/Page/AdminLayout"
 import GetCarByMake from "./Components/Fetch/GetCarByMake"
 import Example from "./Components/Example/Example"
 import App1 from "./Components/Example/DarkMode"
+import UpdateModelForm from "./Components/Admin/UpdateModel"
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
             <Footer />
             <Emp />
             <Example />
-            <App1/>
+            {/*<App1 />*/}
         </div>
     )
 }

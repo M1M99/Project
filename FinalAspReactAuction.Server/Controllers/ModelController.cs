@@ -2,6 +2,7 @@
 using FinalAspReactAuction.Server.Dtos.ModelDto;
 using FinalAspReactAuction.Server.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace FinalAspReactAuction.Server.Controllers;
 
@@ -70,4 +71,19 @@ public class ModelController : ControllerBase
         var data = await _modelService.GetModelsByMakeId(id);
         return data;
     }
+
+    [HttpPut]
+    public async Task UpdateAsync(UpdateModelDto model)
+    {
+        var existingModel = await _modelService.GetByIdAsync(model.Id);
+        if (existingModel != null)
+        {
+            existingModel.MakeId = model.MakeId;  
+            existingModel.Name = model.Name;
+            existingModel.Type = model.Type;
+
+        }
+        await _modelService.UpdateAsync(existingModel!);
+    }
+
 }

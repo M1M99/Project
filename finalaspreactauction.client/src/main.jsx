@@ -10,6 +10,9 @@ import CarList from './Components/Fetch/CarList';
 import AdminLayout from './Components/Page/AdminLayout';
 import NotFound from './Components/Page/NotFound';
 import GetCarByMake from './Components/Fetch/GetCarByMake';
+import UpdateMakeForm from './Components/Admin/UpdateMake';
+import UpdateModelForm from './Components/Admin/UpdateModel';
+import ResponsiveAutoExample from './Components/Example/ResponsiveAutoExample';
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
@@ -22,11 +25,13 @@ createRoot(document.getElementById('root')).render(
                     {<AddCar1 />}
                     <a style={{ fontSize: "25px", textDecoration: "none", color: "#000" }} href="/delete">Delete</a>
                 </div>} key={location.key} />
-                <Route path="/addNew" element={<AddCar1 />} key={location.key} />
+                <Route path="/addNew" element={<><AdminLayout /> <AddCar1 /></>} key={location.key} />
                 <Route path="/delete" element={<CarList />} key={location.key} />
                 <Route path="/addmakeormodel" element={<AdminSide />} key={location.key} />
+                <Route path="/UpdateMakeForm" element={<UpdateMakeForm />} key={location.key} />
+                <Route path="/UpdateModel" element={<UpdateModelForm />} key={location.key} />
                 <Route path="/admin" element={
-                    <AdminLayout />
+                    <div> <AdminLayout /> <ResponsiveAutoExample/></div>
                 }/>
                 <Route path={`/getCarByBrand/:id`} element={<GetCarByMake />} key={location.key}></Route>
                 <Route path="*" element={<NotFound />} key={location.key}></Route>

@@ -45,9 +45,9 @@ namespace Auction.Business.Concrete
             return models;
         }
 
-        public Task UpdateAsync(Model model)
+        public async Task UpdateAsync(Model model)
         {
-            throw new NotImplementedException();
+            await _modelDal.Update(model);
         }
     }
 }
