@@ -110,6 +110,7 @@ function ResponsiveAutoExample() {
     return (
         <Container className="bg-[#3B3C36] p-3 rounded-3 mt-3">
             <Row>
+                {console.log(cars)}
                 {cars.map((res) => (
                     <React.Fragment key={res.id}>
                         <Col sm={4}>
@@ -121,8 +122,8 @@ function ResponsiveAutoExample() {
                         </Col>
                         <Col sm={4}>
                             <div>
-                                <h5>{res.year}</h5>
-                                <h5>{res.branch}</h5>
+                                <h5>{res.country}</h5>
+                                <h5>{res.fuelType}</h5>
                             </div>
                         </Col>
                     </React.Fragment>

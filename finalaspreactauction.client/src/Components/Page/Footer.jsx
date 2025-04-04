@@ -23,7 +23,7 @@ function Footer() {
 
 
     return (
-        <div className="grid grid-cols-4 gap-4 place-items-center">
+        <div className="grid grid-cols-4 gap-4 place-items-center" id="footer">
             {make.map((brand) => (
                 <li key={brand.id}>
                     <Link

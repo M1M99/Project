@@ -3,140 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\emp.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\emp.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\page\\notfound.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\page\\notfound.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{5EA604EC-2339-4250-87F4-00E3145AEEAA}|Auction.Business\\Auction.Business.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\auction.business\\concrete\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EA604EC-2339-4250-87F4-00E3145AEEAA}|Auction.Business\\Auction.Business.csproj|solutionrelative:auction.business\\concrete\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\page\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\page\\header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{5EA604EC-2339-4250-87F4-00E3145AEEAA}|Auction.Business\\Auction.Business.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\auction.business\\abstract\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EA604EC-2339-4250-87F4-00E3145AEEAA}|Auction.Business\\Auction.Business.csproj|solutionrelative:auction.business\\abstract\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\page\\footer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\page\\footer.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\page\\adminlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\page\\adminlayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\fetch\\modellist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\fetch\\modellist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\fetch\\loading.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\fetch\\loading.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\fetch\\getcarbymake.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\fetch\\getcarbymake.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\fetch\\carlist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\fetch\\carlist.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\fetch\\addcar1.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\fetch\\addcar1.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\example\\responsiveautoexample.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\example\\responsiveautoexample.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\example\\file1.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\example\\file1.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\example\\example.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\example\\example.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\example\\darkmode.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\example\\darkmode.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\admin\\updatemodel.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\admin\\updatemodel.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\admin\\updatemake.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\admin\\updatemake.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\admin\\update.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\admin\\update.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\admin\\adminside.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\admin\\adminside.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\admin\\addmodel.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\admin\\addmodel.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\account\\account.module.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\account\\account.module.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\account\\account.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\account\\account.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\dtos\\cardto\\addcardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\dtos\\cardto\\addcardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\dtos\\cardto\\updatecardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\dtos\\cardto\\updatecardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\dtos\\makedto\\addmakedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\dtos\\makedto\\addmakedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\dtos\\makedto\\editmakedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\dtos\\makedto\\editmakedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\dtos\\modeldto\\addmodeldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\dtos\\modeldto\\addmodeldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\dtos\\modeldto\\updatemodeldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\dtos\\modeldto\\updatemodeldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\entities\\customidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\entities\\customidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\entities\\customidentityuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\entities\\customidentityuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\migrations\\customidentitydbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\migrations\\customidentitydbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\migrations\\20250317114334_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\migrations\\20250317114334_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\finalaspreactauction.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\finalaspreactauction.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
   "DocumentGroupContainers": [
@@ -146,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICarService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\Auction.Business\\Abstract\\ICarService.cs",
+              "RelativeDocumentMoniker": "Auction.Business\\Abstract\\ICarService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\Auction.Business\\Abstract\\ICarService.cs",
+              "RelativeToolTip": "Auction.Business\\Abstract\\ICarService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:07:56.307Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -155,443 +56,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Emp.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Emp.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Emp.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Emp.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Emp.jsx",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:20:45.285Z",
+              "Title": "CarController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Controllers\\CarController.cs",
+              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Controllers\\CarController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Controllers\\CarController.cs",
+              "RelativeToolTip": "FinalAspReactAuction.Server\\Controllers\\CarController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:06:38.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NotFound.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Page\\NotFound.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Page\\NotFound.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Page\\NotFound.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Page\\NotFound.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:20:43.082Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Header.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Page\\Header.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Page\\Header.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Page\\Header.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Page\\Header.jsx",
-              "ViewState": "AgIAADIAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:20:40.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Footer.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Page\\Footer.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Page\\Footer.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Page\\Footer.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Page\\Footer.jsx",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:20:37.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AdminLayout.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Page\\AdminLayout.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Page\\AdminLayout.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Page\\AdminLayout.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Page\\AdminLayout.jsx",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:20:35.577Z",
+              "Title": "CarService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\Auction.Business\\Concrete\\CarService.cs",
+              "RelativeDocumentMoniker": "Auction.Business\\Concrete\\CarService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\Auction.Business\\Concrete\\CarService.cs",
+              "RelativeToolTip": "Auction.Business\\Concrete\\CarService.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAUwA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:04:02.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ModelList.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Fetch\\ModelList.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Fetch\\ModelList.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Fetch\\ModelList.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Fetch\\ModelList.jsx",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:20:31.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Loading.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Fetch\\Loading.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Fetch\\Loading.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Fetch\\Loading.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Fetch\\Loading.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:20:29.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GetCarByMake.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Fetch\\GetCarByMake.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Fetch\\GetCarByMake.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Fetch\\GetCarByMake.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Fetch\\GetCarByMake.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:20:11.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CarList.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Fetch\\CarList.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Fetch\\CarList.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Fetch\\CarList.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Fetch\\CarList.jsx",
-              "ViewState": "AgIAAM4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:20:04.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddCar1.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Fetch\\AddCar1.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Fetch\\AddCar1.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Fetch\\AddCar1.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Fetch\\AddCar1.jsx",
-              "ViewState": "AgIAANcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:19:54.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ResponsiveAutoExample.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Example\\ResponsiveAutoExample.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Example\\ResponsiveAutoExample.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Example\\ResponsiveAutoExample.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Example\\ResponsiveAutoExample.jsx",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAAAIcAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:19:48.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "File1.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Example\\File1.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Example\\File1.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Example\\File1.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Example\\File1.jsx",
-              "ViewState": "AgIAAO4AAAAAAAAAAAAQwPAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:19:33.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Example.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Example\\Example.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Example\\Example.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Example\\Example.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Example\\Example.jsx",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAG8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:19:12.377Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DarkMode.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Example\\DarkMode.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Example\\DarkMode.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Example\\DarkMode.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Example\\DarkMode.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:19:09.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UpdateModel.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Admin\\UpdateModel.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Admin\\UpdateModel.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Admin\\UpdateModel.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Admin\\UpdateModel.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:19:02.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UpdateMake.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Admin\\UpdateMake.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Admin\\UpdateMake.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Admin\\UpdateMake.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Admin\\UpdateMake.jsx",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:18:57.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Update.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Admin\\Update.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Admin\\Update.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Admin\\Update.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Admin\\Update.jsx",
-              "ViewState": "AgIAANoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:18:50.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "AdminSide.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Admin\\AdminSide.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Admin\\AdminSide.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Admin\\AdminSide.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Admin\\AdminSide.jsx",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:18:43.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AddModel.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Admin\\AddModel.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Admin\\AddModel.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Admin\\AddModel.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Admin\\AddModel.jsx",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:18:37.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "account.module.css",
               "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Account\\account.module.css",
               "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Account\\account.module.css",
               "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Account\\account.module.css",
               "RelativeToolTip": "finalaspreactauction.client\\src\\Account\\account.module.css",
-              "ViewState": "AgIAANgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-03T19:18:30.687Z",
+              "WhenOpened": "2025-04-04T21:00:55.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Account.jsx",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Account\\Account.jsx",
-              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Account\\Account.jsx",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Account\\Account.jsx",
-              "RelativeToolTip": "finalaspreactauction.client\\src\\Account\\Account.jsx",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CarList.jsx",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Fetch\\CarList.jsx",
+              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Fetch\\CarList.jsx",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Fetch\\CarList.jsx",
+              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Fetch\\CarList.jsx",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAAANQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-03T19:18:17.886Z",
+              "WhenOpened": "2025-04-04T20:06:04.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "AddCarDto.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Dtos\\CarDto\\AddCarDto.cs",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Dtos\\CarDto\\AddCarDto.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Dtos\\CarDto\\AddCarDto.cs",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\Dtos\\CarDto\\AddCarDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:18:12.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "UpdateCarDto.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Dtos\\CarDto\\UpdateCarDto.cs",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Dtos\\CarDto\\UpdateCarDto.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Dtos\\CarDto\\UpdateCarDto.cs",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\Dtos\\CarDto\\UpdateCarDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:18:11.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "AddMakeDto.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Dtos\\MakeDto\\AddMakeDto.cs",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Dtos\\MakeDto\\AddMakeDto.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Dtos\\MakeDto\\AddMakeDto.cs",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\Dtos\\MakeDto\\AddMakeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:18:11.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "EditMakeDto.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Dtos\\MakeDto\\EditMakeDto.cs",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Dtos\\MakeDto\\EditMakeDto.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Dtos\\MakeDto\\EditMakeDto.cs",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\Dtos\\MakeDto\\EditMakeDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:18:10.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "AddModelDto.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Dtos\\ModelDto\\AddModelDto.cs",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Dtos\\ModelDto\\AddModelDto.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Dtos\\ModelDto\\AddModelDto.cs",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\Dtos\\ModelDto\\AddModelDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:18:09.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UpdateModelDto.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Dtos\\ModelDto\\UpdateModelDto.cs",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Dtos\\ModelDto\\UpdateModelDto.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Dtos\\ModelDto\\UpdateModelDto.cs",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\Dtos\\ModelDto\\UpdateModelDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:18:08.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "CustomIdentityDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Entities\\CustomIdentityDbContext.cs",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Entities\\CustomIdentityDbContext.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Entities\\CustomIdentityDbContext.cs",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\Entities\\CustomIdentityDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:18:07.08Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CustomIdentityUser.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Entities\\CustomIdentityUser.cs",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Entities\\CustomIdentityUser.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Entities\\CustomIdentityUser.cs",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\Entities\\CustomIdentityUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:18:06.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Entities\\User.cs",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:18:05.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CustomIdentityDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Migrations\\CustomIdentityDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Migrations\\CustomIdentityDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Migrations\\CustomIdentityDbContextModelSnapshot.cs",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\Migrations\\CustomIdentityDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAYBAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:17:57.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "20250317114334_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Migrations\\20250317114334_InitialCreate.cs",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Migrations\\20250317114334_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Migrations\\20250317114334_InitialCreate.cs",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\Migrations\\20250317114334_InitialCreate.cs",
-              "ViewState": "AgIAAMwAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:17:46.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Program.cs",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Program.cs",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T19:17:37.153Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "FinalAspReactAuction.Server.http",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\FinalAspReactAuction.Server.http",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\FinalAspReactAuction.Server.http",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\FinalAspReactAuction.Server.http",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\FinalAspReactAuction.Server.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-04-03T19:17:36.352Z",
+              "DocumentIndex": 3,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\index.css",
+              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\index.css",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\index.css",
+              "RelativeToolTip": "finalaspreactauction.client\\src\\index.css",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAtwIAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-04T20:05:16.941Z",
               "EditorCaption": ""
             }
           ]

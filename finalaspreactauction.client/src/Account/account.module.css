@@ -16,6 +16,9 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    /*background-image: url("https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?t=st=1743787613~exp=1743791213~hmac=6d1231b28ddaaa5a974d3a4d038cfdc0a11b9c4fa03ae5ae66cb4d82d69721eb&w=996");*/
+    /*background-image: url("https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148872043.jpg?t=st=1743789085~exp=1743792685~hmac=0ab7156994bdefba3dd2b8d69607234dd982626dd3352cdc84b43eecd0ddb165&w=1060");*/
+    background-image: url("../assets/pexels-nerdnonsense-23522813.jpg");
 }
 
 
@@ -221,3 +224,4 @@
         height: 1000vw;
     }
 }
+

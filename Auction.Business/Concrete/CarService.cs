@@ -24,7 +24,7 @@ namespace Auction.Business.Concrete
 
         public async Task AddAsync(Car car)
         {
-            await _carAccess.Add(car); 
+            await _carAccess.Add(car);
         }
 
         public async Task DeleteAsync(int id)
@@ -46,7 +46,7 @@ namespace Auction.Business.Concrete
         public async Task<List<Car>> GetAllAsyncForPagination(int page, int count)
         {
             var cars = await _carAccess.GetCollection();
-            return cars.Skip((page-1) * count).Take(count).ToList();
+            return cars.Skip((page - 1) * count).Take(count).ToList();
         }
 
         public async Task<List<Car>> GetAllByMakeId(int makeId)
@@ -89,6 +89,15 @@ namespace Auction.Business.Concrete
                 result.Year = car.Year;
                 await _carAccess.Update(result);
             }
+        }
+
+        public async Task<List<Car>> GetTopTenPricePerformance()
+        {
+            var cars = await _carAccess.GetCollection();
+            var bestPricePerformanceCar = cars
+            .OrderBy(x => x.Price / x.Year) //can add hp
+            .Take(10).ToList();
+            return bestPricePerformanceCar;
         }
     }
 }

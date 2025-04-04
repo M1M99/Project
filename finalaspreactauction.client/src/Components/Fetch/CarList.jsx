@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchengin } from '@fortawesome/free-brands-svg-icons';
 import Loading from './Loading';
-import { Button } from 'bootstrap';
 import axios from '../../../../node_modules/axios/index';
 import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
@@ -121,7 +120,6 @@ const CarList = () => {
 
     return (
         <Container id="container">
-            {/*{console.log(cars)}*/}
             <div className='inputDiv'>
                 {userrole === "Admin" && (<FontAwesomeIcon icon={faPenToSquare} className="editForAdminIcon" onClick={() => { editHandle() }} />)}
                 <FontAwesomeIcon style={{ display: "flex", width: "30px", height: "30px", margin: "auto 3px" }} className="iconSearch" icon={faSearchengin} />
@@ -165,6 +163,12 @@ const CarList = () => {
                                             <td>{car.country}</td>
                                             <td>{car.vin}</td>
                                             <td>{car.engine}L</td>
+                                            {userrole !== "Admin" && (
+                                                <tr>
+                                                    <td colSpan="3">
+                                                        <button variant="primary" onClick={() => handleRegister(car.id)}>Register</button>
+                                                    </td>
+                                                </tr>)}
                                             {userrole === "Admin" && editBtn && (
                                                 <div>
                                                     <td id="edit" className="absolute right-50">

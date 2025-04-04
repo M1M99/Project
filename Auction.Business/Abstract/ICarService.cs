@@ -19,6 +19,7 @@ namespace Auction.Business.Abstract
         Task AddAsync(Car car);
         Task UpdateAsync(Car car);
         Task DeleteAsync(int id);
-        Task<List<Car>>   Filter(Expression<Func<Car, bool>> filter);
+        Task<List<Car>> GetTopTenPricePerformance();
+        Task<List<Car>> Filter(Expression<Func<Car, bool>> filter);
     }
 }

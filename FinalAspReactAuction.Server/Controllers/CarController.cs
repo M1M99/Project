@@ -38,6 +38,11 @@ namespace FinalAspReactAuction.Server.Controllers
             return cars.OrderBy(a => a.Price).ToList();
         }
 
+        [HttpGet("GetP/P")]
+        public Task<List<Car>> Get() { 
+            return _carService.GetTopTenPricePerformance() ;
+        }
+
         [HttpGet("GetById")]
         public async Task<Car> GetById(int id)
         {

@@ -22,6 +22,7 @@ function App() {
             <Emp />
             <Example />
             {/*<App1 />*/}
+            {/*<ThreeDCardDemo/>*/}
         </div>
     )
 }
