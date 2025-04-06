@@ -8,9 +8,11 @@ import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import UpdateCarForm from '../Admin/Update';
-import { Tooltip, IconButton } from '@mui/material';
+//import { Tooltip, IconButton } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ModeEditIcon from '@mui/icons-material/ModeEdit';
+import { SearchOutlined } from '@ant-design/icons';
+import { Button, Flex, Tooltip } from 'antd';
 
 const CarList = () => {
     const [cars, setCars] = useState([]);
@@ -166,7 +168,7 @@ const CarList = () => {
                                             {userrole !== "Admin" && (
                                                 <tr>
                                                     <td colSpan="3">
-                                                        <button variant="primary" onClick={() => handleRegister(car.id)}>Register</button>
+                                                        <Button type="dashed" shape="circle" icon={<SearchOutlined />} />
                                                     </td>
                                                 </tr>)}
                                             {userrole === "Admin" && editBtn && (

@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import GetCarByMake from "../Fetch/GetCarByMake";
 import { Link } from "react-router-dom";
+import { QRCode } from 'antd';
+
 function Footer() {
     const [make, setMake] = useState([]);
     const [selectedId, setSelectedId] = useState('');
@@ -35,6 +37,19 @@ function Footer() {
                 </li>
             ))
             }
+            <div>
+            <QRCode
+                errorLevel="H"
+                value="https://localhost:50007/"
+                icon="https://static.thenounproject.com/png/1025889-200.png"
+                style={{
+                    width:"150px",
+                    marginLeft: "auto",
+                    maxWidth: '50%',
+                    height: 'auto',
+                }}
+                />
+            </div>
             {selectedId && <GetCarByMake makeId={selectedId} />}
         </div>
 

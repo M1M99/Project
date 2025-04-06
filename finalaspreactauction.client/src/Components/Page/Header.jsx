@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useNavigate } from 'react-router-dom';
 import './../../index.css'
 import { Link } from 'react-router-dom';
+import Fooo2 from "../Example/Emps";
 
 function Header({ adminName}) {
     const [showLogin, setShowLogin] = useState(false);
@@ -51,7 +52,10 @@ function Header({ adminName}) {
                     <Image src={logo} alt="Logo" />
                     <Span><Link id="title" to="/#">Online Car Auction</Link></Span>
                     {!isAuthenticated ? (
-                        <button className="navBtn" id="login" style={{ marginLeft: "auto" }} onClick={() => setShowLogin(true)}>Log in</button>)
+                        <>
+                            <Fooo2 className="navBtn" id="login" style={{ marginLeft: "auto" }} />
+                            <button className="navBtn" id="login"  onClick={() => setShowLogin(true)}>Log in</button>
+                        </>)
                         :
                         (<button className="navBtn" onClick={handleLogout} style={{ marginLeft: "auto" }}>Log out<span style={{ display: "flex", justifyContent: "center", fontSize: "0.5rem" }}>{adminName}</span></button>)
                     }</Nav>

@@ -11,7 +11,7 @@ export default function App1() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <main>This app is using the dark mode</main>
+      <main>This app is using dark mode</main>
     </ThemeProvider>
   );
 }
