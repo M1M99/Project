@@ -8,7 +8,7 @@ import { jwtDecode } from "jwt-decode";
 import { useNavigate } from "react-router-dom";
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import UpdateCarForm from '../Admin/Update';
-//import { Tooltip, IconButton } from '@mui/material';
+import { IconButton } from '@mui/material'; //Tooltip add here
 import DeleteIcon from '@mui/icons-material/Delete';
 import ModeEditIcon from '@mui/icons-material/ModeEdit';
 import { SearchOutlined } from '@ant-design/icons';
@@ -24,10 +24,12 @@ const CarList = () => {
     const navigate = useNavigate();
     const [carIdToUpdate, setCarIdToUpdate] = useState(null);
     const [selectedCarDetails, setSelectedCarDetails] = useState(null);
+    const [openEditInput, setOpenEditInput] = useState(false)
 
     const [editBtn, setEditBtn] = useState(false);
 
     const update = (carId) => {
+        setOpenEditInput(!openEditInput)
         setCarIdToUpdate(carId);
         const carToUpdate = cars.find(car => car.id === carId);
         setSelectedCarDetails(carToUpdate);
@@ -209,7 +211,7 @@ const CarList = () => {
             )}
 
 {
-    carIdToUpdate && selectedCarDetails && editBtn && (
+                carIdToUpdate && selectedCarDetails && editBtn && openEditInput&& (
         <UpdateCarForm carId={carIdToUpdate} carDetails={selectedCarDetails} makes={makes} models={models} />
     )
 }

@@ -25,34 +25,35 @@ function Footer() {
 
 
     return (
-        <div className="grid grid-cols-4 gap-4 place-items-center" id="footer">
-            {make.map((brand) => (
-                <li key={brand.id}>
-                    <Link
-                        to={`/getCarByBrand/${brand.id}`}
-                        onClick={() => handleCar(brand.id)}
-                    >
-                        {brand.name}
-                    </Link>
-                </li>
-            ))
-            }
+        <>
+            <div className="grid grid-cols-5 gap-4 place-items-center" id="footer"> {/*grid-cols-4*/}
+                {make.map((brand) => (
+                    <li key={brand.id}>
+                        <Link
+                            to={`/getCarByBrand/${brand.id}`}
+                            onClick={() => handleCar(brand.id)}
+                        >
+                            {brand.name}
+                        </Link>
+                    </li>
+                ))
+                }
+                {selectedId && <GetCarByMake makeId={selectedId} />}
             <div>
-            <QRCode
-                errorLevel="H"
-                value="https://localhost:50007/"
-                icon="https://static.thenounproject.com/png/1025889-200.png"
-                style={{
-                    width:"150px",
-                    marginLeft: "auto",
-                    maxWidth: "50%",
-                    height: "auto",
-                }}
+                <QRCode
+                    errorLevel="H"
+                    value="https://localhost:50007/"
+                    icon="https://static.thenounproject.com/png/1025889-200.png"
+                    style={{
+                        width: "150px",
+                        marginLeft: "100%",
+                        maxWidth: "50%",
+                        height: "auto",
+                    }}
                 />
             </div>
-            {selectedId && <GetCarByMake makeId={selectedId} />}
-        </div>
-
+            </div>
+        </>
     )
 }
 
