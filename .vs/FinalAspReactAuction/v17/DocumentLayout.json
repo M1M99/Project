@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D9156FE-1F2C-44A3-AD3C-5F17A8232524}|FinalAspReactAuction.Server\\FinalAspReactAuction.Server.csproj|solutionrelative:finalaspreactauction.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\example\\newjsx.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\example\\newjsx.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|c:\\users\\asus\\source\\repos\\finalaspreactauction\\finalaspreactauction.client\\src\\components\\example\\theme.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C143A26D-1D37-250B-16CE-39213EA4FDF5}|finalaspreactauction.client\\finalaspreactauction.client.esproj|solutionrelative:finalaspreactauction.client\\src\\components\\example\\theme.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +30,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\appsettings.json",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\appsettings.json",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\appsettings.json",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-07T13:45:09.755Z",
+              "DocumentIndex": 1,
+              "Title": "NewJsx.jsx",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Example\\NewJsx.jsx",
+              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Example\\NewJsx.jsx",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Example\\NewJsx.jsx*",
+              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Example\\NewJsx.jsx*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-07T15:13:30.499Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Program.cs",
-              "RelativeDocumentMoniker": "FinalAspReactAuction.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\FinalAspReactAuction.Server\\Program.cs",
-              "RelativeToolTip": "FinalAspReactAuction.Server\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T13:44:42.25Z"
+              "DocumentIndex": 2,
+              "Title": "theme.js",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Example\\theme.js",
+              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\Components\\Example\\theme.js",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\Components\\Example\\theme.js",
+              "RelativeToolTip": "finalaspreactauction.client\\src\\Components\\Example\\theme.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-07T15:13:06.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\App.jsx",
+              "RelativeDocumentMoniker": "finalaspreactauction.client\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\FinalAspReactAuction\\finalaspreactauction.client\\src\\App.jsx",
+              "RelativeToolTip": "finalaspreactauction.client\\src\\App.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-07T15:12:38.44Z",
+              "EditorCaption": ""
             }
           ]
         }

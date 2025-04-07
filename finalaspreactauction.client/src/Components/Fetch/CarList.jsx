@@ -122,7 +122,7 @@ const CarList = () => {
         setEditBtn(!editBtn);
     };
     const handleClick = () => {
-        setColor(color === 'blue' ? 'red' : 'blue'); // Eðer mavi ise kýrmýzý, kýrmýzý ise mavi olsun
+        setColor(color === 'blue' ? 'red' : 'blue'); 
     };
     return (
         <Container id="container">

@@ -84,7 +84,7 @@ const Auction = () => {
         <div>
             <h2>Auction</h2>
             {currentBid && (
-                <p>Son teklif: {currentBid.userName} - ${currentBid.bidAmount}</p>
+                <p>Last Offer: <strong>{currentBid.userName}</strong> - ${currentBid.bidAmount}</p>
             )}
             <div>
                 <input

@@ -18,6 +18,7 @@ import GetCarById from "./Components/Example/salam123"
 import CarouselForDetails from "./Components/Example/carousel"
 import BookmarkToggle from "./Components/Example/svgg"
 import Auction from "./Components/Auction/AuctionHandle"
+import App111 from "./Components/Example/NewJsx"
 /*import Dark from "./Components/Example/hahsdas"*/
 //import FileUpload from "./Components/Example/UploadFile"
 
@@ -25,6 +26,7 @@ import Auction from "./Components/Auction/AuctionHandle"
 function App() {
     return (
         <div>
+            {/*<App111/>*/}
             <Header />
             <CarList />
             <ModelList />

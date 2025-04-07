@@ -11,7 +11,6 @@ const GetCarByMake = () => {
     const [brandName, setBrandName] = useState("");
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-
     useEffect(() => {
         if (!id) {
             setError("No makeId provided");
@@ -26,6 +25,7 @@ const GetCarByMake = () => {
 
                 const carsResponse = await axios.get(`https://localhost:7038/api/Car/GetByBrandId?id=${id}`);
                 setCars(carsResponse.data);
+
             } catch (err) {
                 setError("Failed to fetch data");
                 console.log(err);
@@ -36,6 +36,10 @@ const GetCarByMake = () => {
 
         fetchData();
     }, [id]);
+
+
+
+
 
     if (loading) return <div>Loading...</div>;
     if (error) return <div>{error}</div>;
@@ -57,6 +61,7 @@ const GetCarByMake = () => {
                                         alt={car.makeId}
                                         className="w-full h-auto object-cover"
                                     />
+                                    {/*<h5>{brandName}</h5>*/}
                                     <h5>{car.makeId}</h5>
                                     <h5>{car.id}</h5>
                                     <h5>Year : {car.year}</h5>
