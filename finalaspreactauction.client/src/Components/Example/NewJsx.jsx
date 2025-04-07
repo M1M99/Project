@@ -2,8 +2,6 @@
 import React, { useState } from "react";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { lightTheme, darkTheme } from "./theme";
-import styled from "styled-components";
-import {  useEffect, useRef } from "react";
 
 const GlobalStyle = createGlobalStyle`
   body {

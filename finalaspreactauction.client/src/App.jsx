@@ -31,7 +31,6 @@ function App() {
             <CarList />
             <ModelList />
             <Auction/>
-            <Footer />
             <Emp />
             <Example />
             {/*<App1 />*/}
@@ -39,8 +38,8 @@ function App() {
             {/*<FileUpload/>*/}
             {/*<Fooo2/>*/}
             {/*<Salam />*/}
-            <GetCarById />
             <CarouselForDetails />
+            <Footer />
         </div>
     )
 }

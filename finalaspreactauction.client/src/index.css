@@ -17,6 +17,10 @@
     padding: 0px;
     margin: 0;
 }
+#adminSideList {
+    background: linear-gradient(45deg, #2E3192, #1BFFFF);
+}
+
 #title {
     color: #a9d6e5;
     text-decoration: none;

@@ -26,7 +26,6 @@ const CarList = () => {
     const [selectedCarDetails, setSelectedCarDetails] = useState(null);
 
     const [editBtn, setEditBtn] = useState(false);
-    const [color, setColor] = useState('blue');
 
     const update = (carId) => {
         setCarIdToUpdate(carId);
@@ -121,8 +120,9 @@ const CarList = () => {
     const editHandle = () => {
         setEditBtn(!editBtn);
     };
-    const handleClick = () => {
-        setColor(color === 'blue' ? 'red' : 'blue'); 
+
+    const handleCarClick = (carId) => {
+        navigate(`/car/${carId}`);
     };
     return (
         <Container id="container">
@@ -145,13 +145,13 @@ const CarList = () => {
                     <p>No Cars Found</p>
                 ) : (
                     filteredCars.map((car) => (
-                        <div className="flex" id="listofcar" key={car.id}>
-                            <div id="imgCar" className="w-[250px]"><img src={car.imageUrl} alt={car.vin} /></div>
+                        <div className="flex" key={car.id} id="listofcar">
+                            <div id="imgCar" className="w-[250px]"><img src={car.imageUrl} alt={car.vin} onClick={() => handleCarClick(car.id)} style={{ cursor: 'pointer' }} /></div>
                             <div id="detailscars" className="w-xl flex justify-between">
                                 <table className="table-auto m-2">
                                     <thead>
                                         <tr>
-                                            <th>Details </th>
+                                            <th onClick={() => handleCarClick(car.id)} style={{ cursor: 'pointer' }}>Details </th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -204,14 +204,16 @@ const CarList = () => {
                                 </table>
                             </div>
                         </div>
-                    ))
+    ))
                 )
             )}
 
-            {carIdToUpdate && selectedCarDetails && editBtn && (
-                <UpdateCarForm carId={carIdToUpdate} carDetails={selectedCarDetails} makes={makes} models={models} />
-            )}
-        </Container>
+{
+    carIdToUpdate && selectedCarDetails && editBtn && (
+        <UpdateCarForm carId={carIdToUpdate} carDetails={selectedCarDetails} makes={makes} models={models} />
+    )
+}
+        </Container >
     );
 };
 

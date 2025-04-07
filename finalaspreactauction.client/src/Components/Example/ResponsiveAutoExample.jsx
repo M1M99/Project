@@ -108,7 +108,7 @@ function ResponsiveAutoExample() {
     };
 
     return (
-        <Container className="bg-[#3B3C36] p-3 rounded-3 mt-3">
+        <Container className="bg-[#3B3C36] p-3 rounded-3 mt-3" id="adminSideList">
             <Row>
                 {console.log(cars)}
                 {cars.map((res) => (
@@ -131,7 +131,33 @@ function ResponsiveAutoExample() {
             </Row>
         </Container>
 
+        //<div className="mx-auto max-w-md overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl">
+        //    {cars.map((res) => (
+        //        <div className="md:flex" key={res.id}>
+        //            <div className="md:shrink-0">
+        //                <img
+        //                    className="h-48 w-full object-cover md:h-full md:w-48"
+        //                    src={res.imageUrl}
+        //                    alt={res.name || "Car image"}
+        //                />
+        //            </div>
+        //            <div className="p-8">
+        //                <div className="text-sm font-semibold tracking-wide text-indigo-500 uppercase">
+        //                    {res.company} {/* Replace with actual company */}
+        //                </div>
+        //                <a href="#" className="mt-1 block text-lg leading-tight font-medium text-black hover:underline">
+        //                    {res.title} {/* Replace with actual title */}
+        //                </a>
+        //                <p className="mt-2 text-gray-500">
+        //                    {res.description} {/* Replace with actual description */}
+        //                </p>
+        //            </div>
+        //        </div>
+        //    ))}
+        //</div>
+
     );
+
 }
 
 export default ResponsiveAutoExample;

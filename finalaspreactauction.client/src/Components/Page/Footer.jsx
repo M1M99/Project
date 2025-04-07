@@ -45,8 +45,8 @@ function Footer() {
                 style={{
                     width:"150px",
                     marginLeft: "auto",
-                    maxWidth: '50%',
-                    height: 'auto',
+                    maxWidth: "50%",
+                    height: "auto",
                 }}
                 />
             </div>

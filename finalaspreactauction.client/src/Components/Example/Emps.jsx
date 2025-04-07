@@ -6,13 +6,12 @@ const handleChange = value => {
 const Fooo2 = () => (
     <Space wrap style={{ marginLeft: "auto",marginRight:0 }}>
         <Select
-            defaultValue="lucy"
+            defaultValue="GetAll"
             style={{ width: 120 }}
             onChange={handleChange}
             options={[
-                { value: 'jack', label: 'Jack' },
-                { value: 'lucy', label: 'Lucy' },
-                { value: 'Yiminghe', label: 'yiminghe' },
+                { value: 'Top10Car', label: 'GetTop10' },
+                { value: 'GetAll', label: 'GetAll' },
             ]}
         />
     </Space>

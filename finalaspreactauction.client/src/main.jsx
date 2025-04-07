@@ -13,6 +13,7 @@ import GetCarByMake from './Components/Fetch/GetCarByMake';
 import UpdateMakeForm from './Components/Admin/UpdateMake';
 import UpdateModelForm from './Components/Admin/UpdateModel';
 import ResponsiveAutoExample from './Components/Example/ResponsiveAutoExample';
+import GetCarById from './Components/Example/salam123';
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')).render(
                     {<AddCar1 />}
                     <a style={{ fontSize: "25px", textDecoration: "none", color: "#000" }} href="/delete">Delete</a>
                 </div>} key={location.key} />
+                <Route path="/car/:id" element={<GetCarById />} /> 
                 <Route path="/addNew" element={<><AdminLayout /> <AddCar1 /></>} key={location.key} />
                 <Route path="/delete" element={<CarList />} key={location.key} />
                 <Route path="/addmakeormodel" element={<AdminSide />} key={location.key} />
