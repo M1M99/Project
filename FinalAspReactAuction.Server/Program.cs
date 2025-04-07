@@ -8,8 +8,19 @@ using FinalAspReactAuction.Server.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
+using FinalAspReactAuction.Server.SignalR;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin", policy =>
+    {
+        policy.WithOrigins("https://localhost:50007") 
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials();
+    });
+});
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -45,14 +56,25 @@ builder.Services.AddScoped<IModelDal, EfModelDal>();
 builder.Services.AddScoped<ICarService, CarService>();
 builder.Services.AddScoped<IModelService, ModelService>();
 builder.Services.AddScoped<IMakeService, MakeService>();
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("AllowAll",
+//        builder => builder
+//            .AllowAnyOrigin()
+//            .AllowAnyMethod()
+//            .AllowAnyHeader());
+//});
+//builder.Services.AddSignalR();
+//builder.Services.AddCors(p => p.AddPolicy("cors", builder =>
+//{
+//    builder.WithOrigins("https://localhost:50007") 
+//        .AllowAnyMethod()
+//        .AllowAnyHeader()
+//                        .AllowCredentials());
+//}));
 
-builder.Services.AddCors(p => p.AddPolicy("cors", builder =>
-{
-    builder.WithOrigins("https://localhost:50007") 
-        .AllowAnyMethod()
-        .AllowAnyHeader();
-}));
-
+// SignalR servisini ekleyin
+builder.Services.AddSignalR();
 var app = builder.Build();
 
 app.UseDefaultFiles();
@@ -65,15 +87,16 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseAuthentication();   
-app.UseAuthorization();    
+app.UseAuthentication();
+app.UseAuthorization();
 
+app.UseCors("AllowSpecificOrigin");
 app.MapControllers();
-
-app.UseCors(x => x
-    .AllowAnyMethod()
-    .AllowAnyHeader()
-    .SetIsOriginAllowed(origin => true) 
-    .AllowCredentials()); 
+app.MapHub<AuctionHub>("/auctionHub");
+//app.UseCors(x => x
+//    .AllowAnyMethod()
+//    .AllowAnyHeader()
+//    .SetIsOriginAllowed(origin => true)
+//    .AllowCredentials());
 
 app.Run();

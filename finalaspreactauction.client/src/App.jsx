@@ -16,6 +16,8 @@ import Salam from "./Components/Example/salam"
 import App122 from "./Components/Example/salam123"
 import GetCarById from "./Components/Example/salam123"
 import CarouselForDetails from "./Components/Example/carousel"
+import BookmarkToggle from "./Components/Example/svgg"
+import Auction from "./Components/Auction/AuctionHandle"
 /*import Dark from "./Components/Example/hahsdas"*/
 //import FileUpload from "./Components/Example/UploadFile"
 
@@ -26,6 +28,7 @@ function App() {
             <Header />
             <CarList />
             <ModelList />
+            <Auction/>
             <Footer />
             <Emp />
             <Example />

@@ -23,7 +23,7 @@ const CarouselForDetails = () => (
     //    </div>
     //</Carousel>
 
-    <Carousel autoplay autoplaySpeed={1500} effect="scroolx"
+    <Carousel autoPlay autoplaySpeed={1500} effect="scroolx"
         /*speed={800}*/
         autoplay
         dots={true}

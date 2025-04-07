@@ -19,10 +19,12 @@
     <PackageJsonDependenciesFortawesomeReactFontawesome Condition="$(PackageJsonDependenciesFortawesomeReactFontawesome) == ''">^0.2.2</PackageJsonDependenciesFortawesomeReactFontawesome>
     <PackageJsonDependenciesHeadlessuiReact Condition="$(PackageJsonDependenciesHeadlessuiReact) == ''">^2.2.0</PackageJsonDependenciesHeadlessuiReact>
     <PackageJsonDependenciesHeroiconsReact Condition="$(PackageJsonDependenciesHeroiconsReact) == ''">^2.2.0</PackageJsonDependenciesHeroiconsReact>
+    <PackageJsonDependenciesMicrosoftSignalr Condition="$(PackageJsonDependenciesMicrosoftSignalr) == ''">^8.0.7</PackageJsonDependenciesMicrosoftSignalr>
     <PackageJsonDependenciesMuiIconsMaterial Condition="$(PackageJsonDependenciesMuiIconsMaterial) == ''">^7.0.1</PackageJsonDependenciesMuiIconsMaterial>
     <PackageJsonDependenciesMuiMaterial Condition="$(PackageJsonDependenciesMuiMaterial) == ''">^7.0.1</PackageJsonDependenciesMuiMaterial>
     <PackageJsonDependenciesMuiStyledEngineSc Condition="$(PackageJsonDependenciesMuiStyledEngineSc) == ''">^7.0.1</PackageJsonDependenciesMuiStyledEngineSc>
     <PackageJsonDependenciesTailwindcssVite Condition="$(PackageJsonDependenciesTailwindcssVite) == ''">^4.0.15</PackageJsonDependenciesTailwindcssVite>
+    <PackageJsonDependenciesAnimateCss Condition="$(PackageJsonDependenciesAnimateCss) == ''">^4.1.1</PackageJsonDependenciesAnimateCss>
     <PackageJsonDependenciesAntd Condition="$(PackageJsonDependenciesAntd) == ''">^5.24.6</PackageJsonDependenciesAntd>
     <PackageJsonDependenciesBabelLoader Condition="$(PackageJsonDependenciesBabelLoader) == ''">^10.0.0</PackageJsonDependenciesBabelLoader>
     <PackageJsonDependenciesClsx Condition="$(PackageJsonDependenciesClsx) == ''">^2.1.1</PackageJsonDependenciesClsx>

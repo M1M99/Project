@@ -13,6 +13,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import ModeEditIcon from '@mui/icons-material/ModeEdit';
 import { SearchOutlined } from '@ant-design/icons';
 import { Button, Flex, Tooltip } from 'antd';
+import BookmarkToggle from '../Example/svgg';
 
 const CarList = () => {
     const [cars, setCars] = useState([]);
@@ -25,6 +26,7 @@ const CarList = () => {
     const [selectedCarDetails, setSelectedCarDetails] = useState(null);
 
     const [editBtn, setEditBtn] = useState(false);
+    const [color, setColor] = useState('blue');
 
     const update = (carId) => {
         setCarIdToUpdate(carId);
@@ -119,7 +121,9 @@ const CarList = () => {
     const editHandle = () => {
         setEditBtn(!editBtn);
     };
-
+    const handleClick = () => {
+        setColor(color === 'blue' ? 'red' : 'blue'); // Eðer mavi ise kýrmýzý, kýrmýzý ise mavi olsun
+    };
     return (
         <Container id="container">
             <div className='inputDiv'>
@@ -168,7 +172,7 @@ const CarList = () => {
                                             {userrole !== "Admin" && (
                                                 <tr>
                                                     <td colSpan="3">
-                                                        <Button type="dashed" shape="circle" icon={<SearchOutlined />} />
+                                                        <BookmarkToggle/>
                                                     </td>
                                                 </tr>)}
                                             {userrole === "Admin" && editBtn && (

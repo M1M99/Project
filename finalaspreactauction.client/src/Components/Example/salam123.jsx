@@ -3,6 +3,7 @@ import { Col, Divider, Row, message } from 'antd';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-regular-svg-icons';
+import BookmarkToggle from './svgg';
 const style = { background: '#0092ff', padding: '8px 2px', borderRadius: "5px" };
 
 const GetCarById = () => {
@@ -34,8 +35,8 @@ const GetCarById = () => {
             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                 <Col className="gutter-row" span={10}>
                     <img src={carData.imageUrl} />
-                    <Col span={12} style={{ margin: "0", padding:"0" }}>
-                        <video muted autoplay src={ carData.videoUrl }></video>
+                    <Col >
+                        <video  muted autoPlay src={carData.videoUrl}></video>
                     </Col>
                 </Col>
                 <Col className="gutter-row" span={7}>
@@ -52,8 +53,9 @@ const GetCarById = () => {
                 </Col>
                 <Col className="gutter-row" span={7}>
                     <div style={style}>
-                        <span >BID INFORMATION</span>
-                        <FontAwesomeIcon icon={faBookmark} style={{ marginLeft: '8px' }} />
+                        <span>BID INFORMATION</span>
+                        {/*<FontAwesomeIcon icon={faBookmark} style={{ marginLeft: '8px' }} />*/}
+                        <BookmarkToggle />
                     </div>
                 </Col>
 
