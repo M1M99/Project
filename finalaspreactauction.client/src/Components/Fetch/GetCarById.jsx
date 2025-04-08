@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom'; 
 import { Col, Divider, Row, message } from 'antd';
 import axios from 'axios';
-import BookmarkToggle from './svgg';
-import styled from 'styled-components';
+import BookmarkToggle from '../Example/Bookmark';
 
 const style = { background: '#0092ff', padding: '8px 2px', borderRadius: "5px" };
 

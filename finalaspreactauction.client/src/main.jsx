@@ -13,7 +13,20 @@ import GetCarByMake from './Components/Fetch/GetCarByMake';
 import UpdateMakeForm from './Components/Admin/UpdateMake';
 import UpdateModelForm from './Components/Admin/UpdateModel';
 import ResponsiveAutoExample from './Components/Example/ResponsiveAutoExample';
-import GetCarById from './Components/Example/salam123';
+import ExitAnimation from './Components/Example/Animation';
+import GetCarById from './Components/Fetch/GetCarById';
+
+const button = {
+    backgroundColor: "#0cdcf7",
+    borderRadius: "10px",
+    padding: "10px 20px",
+    color: "#0f1115",
+    cursor: "pointer",
+    fontSize: "16px",
+    height: "min-content", 
+    textDecoration: "none",
+    margin: "10px"
+};
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
@@ -23,11 +36,11 @@ createRoot(document.getElementById('root')).render(
                 <Route path="/login" element={<Account />} key={location.key} />
                 <Route path="/adminside" element={<div className="m-2 flex flex-row px-3 gap-2">
                     {<AdminSide />}
-                    {<AddCar1 />}
-                    <a style={{ fontSize: "25px", textDecoration: "none", color: "#000" }} href="/delete">Delete</a>
+                    {<ExitAnimation />}
+                    <a style={{ fontSize: "25px", textDecoration: "none", color: "#000" }} href="/delete" style={button}>Delete</a>
                 </div>} key={location.key} />
                 <Route path="/car/:id" element={<GetCarById />} /> 
-                <Route path="/addNew" element={<><AdminLayout /> <AddCar1 /></>} key={location.key} />
+                <Route path="/addNew" element={<><AdminLayout /> <ExitAnimation /></>} key={location.key} />
                 <Route path="/delete" element={<CarList />} key={location.key} />
                 <Route path="/addmakeormodel" element={<AdminSide />} key={location.key} />
                 <Route path="/UpdateMakeForm" element={<UpdateMakeForm />} key={location.key} />

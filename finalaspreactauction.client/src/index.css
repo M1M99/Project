@@ -319,6 +319,11 @@ td {
         display: inline-block;
     }
 }
+@media (max-width: 600px) {
+    #edit {
+        display: flex;
+    }
+}
 
 
 #damage {

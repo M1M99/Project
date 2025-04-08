@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { useNavigate } from 'react-router-dom';
 import './../../index.css'
 import { Link } from 'react-router-dom';
-import Fooo2 from "../Example/Emps";
+import Fooo2 from "../Example/Section";
 
 function Header({ adminName}) {
     const [showLogin, setShowLogin] = useState(false);
@@ -42,7 +42,6 @@ function Header({ adminName}) {
     const handleLogout = () => {
         localStorage.removeItem('authToken');
         setIsAuthenticated(false);
-
         navigate('/login');
     };
     return (

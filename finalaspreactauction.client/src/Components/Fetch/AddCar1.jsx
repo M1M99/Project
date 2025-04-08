@@ -124,14 +124,15 @@ const AddCar1 = () => {
 
     return (
         <div className="m-1 bg-white">
-            <Button style={{ cursor: "pointer" }}
-                onClick={() => setFlag(!flag)}
-                aria-controls="example-fade-text"
-                aria-expanded={flag}
-            >
-                {!flag ? "Add New Car" : "Cancel"}
-            </Button>
-            <Fade in={flag}><Form onSubmit={handleSubmit}>
+            {/*<Button style={{ cursor: "pointer" }}*/}
+            {/*    onClick={() => setFlag(!flag)}*/}
+            {/*    aria-controls="example-fade-text"*/}
+            {/*    aria-expanded={flag}*/}
+            {/*>*/}
+            {/*    {!flag ? "Add New Car" : "Cancel"}*/}
+            {/*</Button>*/}
+            {/*<Fade in={flag}>*/}
+                <Form onSubmit={handleSubmit}>
                 {makes && (
                     <Form.Group className="mb-3">
                         <Form.Label>Make</Form.Label>
@@ -207,7 +208,7 @@ const AddCar1 = () => {
                     Add Car
                 </Button>
             </Form>
-            </Fade>
+            {/*</Fade>*/}
             {responseMessage &&
                 <Alert className="my-3" variant="filled" severity="success">
                     {responseMessage}

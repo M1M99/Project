@@ -90,53 +90,62 @@ function AdminSide() {
             navigate("/");
         }
     }, [navigate]);
-
+    const button = {
+        backgroundColor: "#0cdcf7",
+        borderRadius: "10px",
+        padding: "10px 20px",
+        color: "#0f1115",
+        cursor: "pointer",
+        fontSize: "16px",
+        height: "min-content",
+        textDecoration: "none",
+        margin: "10px"
+    };
     return (
         <>
             {userRole === "Admin" &&
                 (
-                    <div className="flex">
-                        <h2 id="adminSideName">Welcome {Adminname}</h2>
-                        {/*<AddModel />*/}
-                        <Button  onClick={() => setFlag(!flag)}
+                    <div className="">
+                        {/*<h2 id="adminSideName">Welcome {Adminname}</h2>*/}
+                    {/*<AddModel />*/}
+                    <button style={button} onClick={() => setFlag(!flag)}
                             aria-controls="example-fade-text"
                             aria-expanded={flag}>
-                            {!flag ? "Add New Make" : "Cancel"}
-                        </Button>
+                            {!flag ? "Add Make" : "Cancel"}
+                        </button>
 
-                    <Fade in={flag}>
-                        <div><Form onSubmit={handleSubmit} className="forEdit">
-                            <Form.Group className="mb-3" controlId="formBasicName" style={{ padding: "0 5px" }}>
-                                <Form.Label style={{ fontFamily: "sans-serif" }}>Name</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    placeholder="Enter Name"
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
-                                    required
-                                />
-                            </Form.Group>
+                        <Fade in={flag}>
+                            <Form onSubmit={handleSubmit} className="forEdit">
+                                <Form.Group className="mb-3" controlId="formBasicName" style={{ padding: "0 5px" }}>
+                                    <Form.Label style={{ fontFamily: "sans-serif" }}>Name</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Enter Name"
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
+                                        required
+                                    />
+                                </Form.Group>
 
-                            <Form.Group className="mb-3" controlId="formBasicDescription" style={{ padding: "0 5px" }}>
-                                <Form.Label>Description</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    placeholder="Enter Description"
-                                    value={description}
-                                    onChange={(e) => setDescription(e.target.value)}
-                                />
-                            </Form.Group>
+                                <Form.Group className="mb-3" controlId="formBasicDescription" style={{ padding: "0 5px" }}>
+                                    <Form.Label>Description</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="Enter Description"
+                                        value={description}
+                                        onChange={(e) => setDescription(e.target.value)}
+                                    />
+                                </Form.Group>
 
-                            <Button
-                                variant="primary"
-                                type="submit"
-                                style={{ display: "block", width: "50%", margin: "0 auto" }}
-                                disabled={loading}
-                            >
-                                {loading ? "Submitting..." : "Submit"}
-                            </Button>
-                        </Form>
-                        </div>
+                                <Button
+                                    variant="primary"
+                                    type="submit"
+                                    style={{ display: "block", width: "50%", margin: "0 auto" }}
+                                    disabled={loading}
+                                >
+                                    {loading ? "Submitting..." : "Submit"}
+                                </Button>
+                            </Form>
                         </Fade>
                         {response && (
                             <div>

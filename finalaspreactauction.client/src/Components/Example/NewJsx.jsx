@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from "react";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { lightTheme, darkTheme } from "./theme";
